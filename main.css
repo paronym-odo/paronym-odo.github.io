@@ -3,9 +3,6 @@
 }
 .paper {
     background-color: white;
-    display: grid;
-    grid-gap: 24px;
-    grid-template-columns: 1fr minmax(752px,936px) 1fr;
-    grid-template-rows: 1fr;
+    margin: 2rem 5vw;
     height: 200vh;
 }
