@@ -9,7 +9,8 @@
 	position: relative;
 	z-index: 9999;
 	width: 100%;
-  padding: 16px 60px;
+  padding-block: 16px;
+	padding-inline: clamp(10px, 3vw, 60px);
 	background: $background_lightBlue;
 
 	@include w1000 {
@@ -49,7 +50,7 @@
 
 		.l_header_menu {
 			display: flex;
-			gap: 38px;
+			gap: clamp(10px, 2vw, 38px);
 			margin: 0;
 			font-weight: bold;
 			font-size: 12px;
@@ -59,6 +60,7 @@
 				a {
 					color: $color_black;
 					text-decoration: none;
+					white-space: nowrap;
 				}
 			}
 		}
