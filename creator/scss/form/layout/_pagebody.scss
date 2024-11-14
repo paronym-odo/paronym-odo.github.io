@@ -1,0 +1,11 @@
+@use "../setting/index" as *;
+
+// --------------------------------------------------
+
+.l_pageBody {
+	padding: 50px 0 100px;
+
+	@include w600 {
+		padding: 100px 0;
+	}
+}

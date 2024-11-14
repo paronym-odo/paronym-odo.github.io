@@ -1,0 +1,60 @@
+@use "../setting/index" as *;
+
+// --------------------------------------------------
+
+.new_case {
+  padding: 75px 60px;
+  background: #EDEEF0;
+
+  .new_case_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+    .c_titleOrnament_case {
+      font-size: 21px;
+      color: #24245E;
+      letter-spacing: 0.67px;
+      text-align: center;
+      
+      &::after {
+        display: block;
+        width: 76px;
+        height: 3px;
+        margin: 0;
+        border-radius: 3px;
+        background: linear-gradient(100deg, #F9D92B, #18E0E6);
+        content: "";
+      }
+    }
+  }
+  
+  .case_title {
+    margin: 0;
+    font-size: 30px;
+    color: #24245E;
+    letter-spacing: 0.96px;
+    font-weight: bold;
+    margin-top: 22px;
+    margin-bottom: 14px;
+  }
+  
+  .p_case_description {
+    margin: 0;
+    font-size: 20px;
+    letter-spacing: 0.64px;
+    line-height: 28px;
+  }
+  
+  .p_case_note {
+    margin: 0;
+    font-size: 16px;
+    letter-spacing: 0.51px;
+    margin-bottom: 48px;
+    margin-top: 16px;
+  }
+
+  #tig-creator-frame {
+    width: 100%;
+  }
+}

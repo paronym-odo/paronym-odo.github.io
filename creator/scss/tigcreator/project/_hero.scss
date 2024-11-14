@@ -1,0 +1,410 @@
+@use "../setting/index" as *;
+
+// --------------------------------------------------
+
+.p_hero {
+	position: relative;
+	overflow: hidden;
+	background: $background_lightBlue;
+	padding-bottom: 2.5vw;
+}
+
+.p_hero_catchcopy01 {
+	position: absolute;
+  top: 2%;
+  left: 5%;
+  width: 90%;
+	z-index: 5;
+	opacity: 0;
+	width: 100%;
+	margin: 0;
+	text-align: center;
+
+	@include w1000 {
+		position: relative;
+		top: 0;
+		left: 0;
+		margin-top: 72px;
+		padding-top: 2.7vw;
+		margin-left: 11.6vw;
+		text-align: left;
+		display: flex;
+		flex-direction: column;
+		justify-content: left;
+	}
+
+	.copy_sub {
+		border-bottom: 4px solid #000;
+		width: fit-content;
+		font-size: 1.56vw;
+		font-weight: bold;
+
+		@include w1000 {
+			font-size: 1.56vw;
+			line-height: 3vw;
+		}
+	}
+
+	.copy_main {
+		margin-top: 0.1em;
+		font-weight: bold;
+		font-size: 4.37vw;
+
+		@include w1000 {
+			font-size: 4.45vw;
+			letter-spacing: 0.02vw;
+			line-height: 1.15;
+			margin-top: 1.2vw;
+		}
+	}
+}
+
+.stats-container {
+	margin-top: 32px;
+  display: flex;
+  align-items: center;
+  /* 各項目を均等配置 */
+  background-color: #fff;
+  border-radius: 16px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.14);
+  width: 90%;
+  padding: 10px;
+  height: auto;
+  font-weight: bold;
+  z-index: 5;
+
+	@include w1000 {
+		width: 39.3vw;
+		height: 7.7vw;
+		margin-top: 3vw;
+		padding: 1vw 2.4vw;
+	}
+
+	.status_cel {
+	}
+
+	.status_text {
+		margin: 0;
+		text-align: center;
+		font-size: 1.08vw;
+		font-weight: bold;
+		white-space: nowrap;
+	}
+	
+	.status_ratio {
+		margin: 0;
+		text-align: center;
+		font-size: 2vw;
+		font-weight: bold;
+		white-space: nowrap;
+
+		.highlight-number {
+			font-size: 48px;
+			color: #FF580D;
+			line-height: 2vw;
+			font-size: 3.5vw;
+		}
+	}
+
+	.separator {
+		min-width: 6px;
+    height: 100%;
+    background-image: radial-gradient(circle, #ddd 3px, transparent 3px);
+    background-size: 6px 12.5px;
+    margin: 0;
+    margin-left: 19px;
+    margin-right: 16px;
+	}
+}
+
+.title-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+	margin-top: 40px;
+
+	@include w1000 {
+		flex-direction: row;
+		gap: 1.7vw;
+		margin-top: 3vw;
+	}
+
+	.primary-button {
+		font-size: 18px;
+		border-radius: 1000px;
+		border: none;
+		cursor: pointer;
+		text-align: center;
+		background-color: #FF580D;
+		color: #ffffff;
+		width: 100%;
+		height: 13.3333vw;
+
+		@include w1000 {
+			border-radius: 1000px;
+			width: 21.4vw;
+			height: 6.1vw;
+		}
+	}
+
+	.secondary-button {
+		font-size: 18px;
+		border-radius: 30px;
+		border: none;
+		cursor: pointer;
+		text-align: center;
+		background-color: #fff;
+		border: 2px solid #000000;
+		width: 100%;
+		height: 13.3333vw;
+		box-sizing: border-box;
+
+		@include w1000 {
+			border-radius: 1000px;
+			width: 21.4vw;
+			height: 6.1vw;
+		}
+	}
+
+	.small-text-button {
+		font-size: 12px;
+		font-weight: normal;
+
+		@include w1000 {
+			font-size: 1vw;
+		}
+	}
+
+	.large-text-button {
+		font-size: 18px;
+		font-weight: bold;
+
+		@include w1000 {
+			font-size: 1.6vw;
+		}
+	}
+}
+
+.p_hero_paint {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+
+	@include w1000 {
+		top: 26%;
+	}
+
+	.paint {
+		position: absolute;
+		top: 0;
+		right: -20%;
+		width: 500%;
+		height: auto;
+
+		@include w1000 {
+			right: 0;
+			width: 100%;
+		}
+	}
+}
+
+.p_hero_image01 {
+  display: inline-block;
+	position: absolute;
+  top: 27%;
+	left: 50%;
+	z-index: 2;
+	transform: translateX(-50%);
+  width: 38.5vw;
+  height: auto;
+  border-radius: 20px;
+
+	@include w1000 {
+		left: 65.8%;
+		top: 23.8%;
+		transform: translateX(0);
+		width: 13.2vw;
+	}
+
+	img {
+		width: 100%;
+		height: auto;
+	}
+}
+
+.p_hero_image02 {
+  position: absolute;
+  bottom: 0;
+  top: 26%;
+  left: 66%;
+  z-index: 1;
+  transform: translateX(-50%);
+  width: 114vw;
+
+	@include w1000 {
+		left: 57.1%;
+		top: 21.6%;
+		transform: translateX(0);
+		width: 42.2vw;
+	}
+
+	img {
+		width: 100%;
+		height: auto;
+	}
+}
+
+.p_hero_image03 {
+  position: absolute;
+  bottom: 0;
+  top: 25%;
+  left: 64%;
+  z-index: 4;
+  transform: translateX(-50%);
+  width: 114vw;
+
+	@include w1000 {
+		left: 57.2%;
+		top: 21.5%;
+		transform: translateX(0);
+		width: 42vw;
+	}
+
+	img {
+		opacity: 1;
+		width: 100%;
+		height: auto;
+	}
+}
+
+@keyframes heroScroll {
+	0% {
+		top: -100%;
+	}
+	100% {
+		top: 100%;
+	}
+}
+
+.p_hero_scroll {
+	display: none;
+	position: absolute;
+	bottom: 10px;
+	left: 50%;
+	z-index: 4;
+	transform: translateX(-50%);
+	font-size: 16px;
+	line-height: 1;
+	font-family: "Univers", "Noto Sans JP", sans-serif;
+
+	@include w1000 {
+		display: block;
+	}
+
+	a {
+		display: block;
+		color: $color_black;
+		text-decoration: none;
+
+		span {
+			display: block;
+			position: relative;
+			height: 30px;
+			margin-top: 10px;
+			overflow: hidden;
+
+			&::after {
+				display: block;
+				position: relative;
+				width: 1px;
+				height: 20px;
+				margin: 0 auto;
+				background: $background_black;
+				content: "";
+				animation: heroScroll 1.2s linear infinite;
+			}
+		}
+	}
+}
+
+.p_company_logos {
+	padding-block: 24px;
+
+	@include w1000 {
+    overflow-x: auto;
+	}
+
+	.logo_list {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: row;
+		gap: 16px;
+
+		@include w1000 {
+			flex-wrap: nowrap;
+		}
+	}
+
+	.logo_col {
+		height: 64px;
+
+		img {
+			height: 100%;
+		}
+
+		@include w1000 {
+		}
+	}
+}
+
+@keyframes fade {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes hero_image03 {
+	0% {
+		opacity: 0;
+		transform: translateX(-20%);
+	}
+	72% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+	86% {
+		opacity: 0.8;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+.p_hero {
+	&.js_active {
+		.p_hero_catchcopy01 {
+			animation: fade 0.2s linear 1s forwards;
+		}
+
+		.p_hero_catchcopy02 {
+			animation: fade 0.2s linear 2s forwards;
+		}
+
+		.p_hero_button {
+			animation: fade 0.2s linear 2s forwards;
+		}
+
+		.p_hero_image02 img {
+			animation: fade 0.2s ease 1s forwards;
+		}
+
+		.p_hero_image03 img {
+			animation: hero_image03 1.4s ease 0s forwards;
+		}
+	}
+}

@@ -1,0 +1,296 @@
+@use "../setting/index" as *;
+
+// --------------------------------------------------
+
+.p_function {
+	padding: 80px 0;
+	background: $background_black;
+
+	@include w600 {
+		padding: 120px 0;
+	}
+}
+
+.p_function_container {
+	max-width: 1840px;
+	margin: 0 auto;
+	padding: 0 30px;
+
+	@include w600 {
+		padding: 0 80px;
+	}
+}
+
+.p_function_list {
+	list-style: none;
+	max-width: 400px;
+	margin: 60px auto 0;
+	padding: 0;
+
+	@include w600 {
+		margin: 100px auto 0;
+	}
+
+	@include w1000 {
+		display: flex;
+		gap: 60px;
+		max-width: none;
+	}
+
+	li {
+		flex-basis: calc((100% - (60px * 3)) / 4);
+		padding: 30px;
+		border-radius: 12px;
+		background: #F2F2F2;
+		text-align: center;
+
+		@include w1000 {
+			padding: clamp(16px, 2vw, 50px);
+			border-radius: 16px;
+		}
+
+		&:not(:last-of-type) {
+			margin-bottom: 30px;
+
+			@include w1000 {
+				margin-bottom: 0;
+			}
+		}
+
+		img {
+			width: 120px;
+			height: auto;
+			vertical-align: bottom;
+
+			@include w1000 {
+				width: 160px;
+			}
+		}
+
+		h3 {
+			margin: 10px 0 30px;
+			font-size: 24px;
+
+			@include w1000 {
+				margin: 10px 0 40px;
+				font-size: min(30px, 1.57vw);
+			}
+		}
+
+		p {
+			margin: 0;
+			color: #555;
+			text-align: justify;
+		}
+	}
+}
+
+.p_function_cms_button {
+	margin: 40px 0 0;
+	text-align: center;
+
+	@include w600 {
+		margin: 80px 0 0;
+	}
+
+	a {
+		display: inline-block;
+		min-width: 80%;
+		height: 54px;
+		padding: 15px;
+		border-radius: 27px;
+		background: $color_lightBlue;
+		color: $color_white;
+		font-weight: bold;
+		font-size: 16px;
+		line-height: 24px;
+		text-decoration: none;
+		cursor: pointer;
+
+		@include w600 {
+			min-width: 350px;
+			height: 70px;
+			padding: 20px;
+			border-radius: 35px;
+			line-height: 30px;
+		}
+	}
+}
+
+.p_function_cms {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 99999;
+	width: 100vw;
+	height: 100vh;
+	overflow-y: auto;
+	background: rgba(#000, 0.9);
+
+	.p_function_cms_close {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+
+		&::before {
+			display: block;
+			position: absolute;
+			top: 10px;
+			right: 10px;
+			width: 20px;
+			color: #FFF;
+			font-weight: bold;
+			font-size: 20px;
+			line-height: 20px;
+			text-align: center;
+			content: "×";
+		}
+	}
+
+	.p_function_cms_container {
+		max-width: 1200px;
+		margin: 0 auto;
+		padding: 30px;
+	
+		@include w600 {
+			padding: 80px;
+		}
+
+		.p_function_cms_body {
+			padding: 30px;
+			background: #FFF;
+
+			@include w600 {
+				padding: 80px;
+			}
+
+			> *:first-child {
+				margin-top: 0;
+			}
+
+			> *:last-child {
+				margin-bottom: 0;
+			}
+
+			table {
+				width: 100%;
+				margin-top: 40px;
+				border: 1px solid #CCC;
+				font-size: 14px;
+				text-align: left;
+
+				tr {
+					padding-bottom: 10px;
+					border-bottom: 1px solid #CCC;
+					
+					@include mw999 {
+						display: block;
+					}
+
+					@include w1000 {
+						border-bottom: none;
+					}
+
+					&:nth-of-type(1) {
+						background: $background_darkBlue;
+						color: #FFF;
+					}
+
+					&:nth-of-type(2) {
+						background: #EEE;
+
+						@include mw999 {
+							display: none;
+						}
+					}
+
+					th {
+						padding: 10px;
+						border: 1px solid #CCC;
+						text-align: center;
+
+						@include mw999 {
+							display: block;
+							padding: 10px 10px 0;
+							border: none;
+						}
+					}
+
+					td {
+						padding: 10px;
+						border: 1px solid #CCC;
+
+						@include mw999 {
+							display: flex;
+							gap: 10px;
+							padding: 10px 10px 0;
+							border: none;
+						}
+
+						&::before {
+							@include mw999 {
+								flex-basis: 100px;
+								min-width: 100px;
+								background: #EEE;
+								text-align: center;
+							}
+						}
+
+						&:nth-of-type(1) {
+							&::before {
+								@include mw999 {
+									content: "対象サービス";
+								}
+							}
+						}
+
+						&:nth-of-type(2) {
+							&::before {
+								@include mw999 {
+									content: "項目名";
+								}
+							}
+						}
+
+						&:nth-of-type(3) {
+							&::before {
+								@include mw999 {
+									content: "内容";
+								}
+							}
+						}
+
+						&:nth-of-type(4) {
+							text-align: center;
+
+							&::before {
+								@include mw999 {
+									content: "LINE連携";
+								}
+							}
+						}
+					}
+				}
+
+				.p_function_cms_cellXs {
+					width: 100px;
+				}
+
+				.p_function_cms_cellSm {
+					width: 120px;
+				}
+
+				.p_function_cms_cellMd {
+					width: 140px;
+				}
+			}
+
+			.p_function_cms_note {
+				font-size: 12px;
+			}
+		}
+	}
+}

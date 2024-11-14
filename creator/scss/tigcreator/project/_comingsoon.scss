@@ -1,0 +1,63 @@
+@use "../setting/index" as *;
+
+// --------------------------------------------------
+
+.p_comingsoon {
+	position: relative;
+	padding: 80px 0;
+	background: rgba(#FFF, 0.95);
+
+	@include w600 {
+		padding: 120px 0;
+	}
+
+	&::before {
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: -1;
+		width: 100%;
+		height: 100%;
+		background: linear-gradient(to right, #0280E8, #3AC0C4, #40CACE, #D09D1D);
+		content: "";
+	}
+}
+
+.p_comingsoon_container {
+	padding: 0 30px;
+
+	@include w600 {
+		padding: 0 80px;
+	}
+}
+
+.p_comingsoon_body {
+	padding: 30px;
+	border-radius: 16px;
+	background: #FFF;
+
+	@include w600 {
+		padding: 80px;
+	}
+
+	p {
+		margin: 0;
+		color: $color_darkBlue;
+		font-weight: bold;
+		font-size: 26px;
+		line-height: 1.5;
+		text-align: center;
+	
+		@include w600 {
+			font-size: 40px;
+		}
+	
+		span {
+			font-size: 20px;
+	
+			@include w600 {
+				font-size: 30px;
+			}
+		}
+	}
+}

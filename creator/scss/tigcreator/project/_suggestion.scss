@@ -1,0 +1,76 @@
+@use "../setting/index" as *;
+
+// --------------------------------------------------
+
+.p_middle_suggestion {
+  padding: 48px 0 56px;
+  background-color: #000000;
+}
+
+/* コンテナ */
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* 資料請求ボタンのスタイル */
+.request-button {
+  background-color: #ff6a00;
+  color: white;
+  width: 388px;
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  border: none;
+  border-radius: 40px;
+  font-weight: bold;
+  cursor: pointer;
+  box-sizing: border-box;
+  position: relative;
+}
+
+/* お問い合わせボタンのスタイル */
+.contact-button {
+  width: 388px;
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  border: none;
+  border-radius: 40px;
+  font-weight: bold;
+  cursor: pointer;
+  box-sizing: border-box;
+  background-color: white;
+  color: black;
+  position: relative;
+}
+
+/* 小さい文字のスタイル */
+.small-text {
+  font-size: 12px;
+  display: block;
+  line-height: 0;
+  margin-bottom: 8px;
+}
+
+/* 大きい文字のスタイル */
+.large-text {
+  font-size: 20px;
+  display: block;
+  line-height: 0;
+}
+
+/* 矢印のスタイル */
+.button_arrow_icon {
+  position: absolute;
+  top: 35%;
+  right: 20px;
+  width: 24px;
+}

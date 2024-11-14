@@ -1,0 +1,130 @@
+@use "../setting/index" as *;
+
+// --------------------------------------------------
+
+.p_problem {
+  width: 100%;
+  background-color: #F5F3FB;
+  position: relative;
+
+	&::after {
+		content: "";
+		position: absolute;
+    bottom: -48px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 50px 116px 0;
+		border-style: solid;
+		border-color: #F5F3FB transparent transparent transparent;
+	}
+
+	.probrem_title {
+		font-size: 32px;
+		font-weight: bold;
+		color: #24245E;
+		text-align: center;
+		margin: 0;
+    padding-top: 40px;
+    letter-spacing: 1.02px;
+	}
+	
+	.p_problem_bubbles {
+		display: flex;
+		width: fit-content;
+		gap: 16px;
+		box-sizing: border-box;
+		margin: 0 auto;
+    padding-bottom: 50px;
+	}
+	
+	.probrem {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 316px;
+		margin-top: 30px;
+
+		&:nth-child(2) {
+			margin-top: 70px;
+		}
+	}
+
+	.bubble {
+		position: relative;
+		background: #ffffff;
+		border-radius: 12px;
+		margin: 0;
+		width: 316px;
+		box-sizing: border-box;
+		box-shadow: 0px 4px 8px #00000014;
+
+		&::after {
+			content: "";
+			position: absolute;
+			bottom: -16px;
+			left: 50%;
+			transform: translateX(-50%);
+			border-width: 17px 13px 0;
+			border-style: solid;
+			border-color: #ffffff transparent transparent transparent;
+		}
+
+		p {
+			margin: 0;
+			font-size: 16px;
+			line-height: 22.4px;
+			text-align: center;
+
+			&.highlight,
+			.highlight {
+				margin: 0;
+				text-align: center;
+				background-color: #FAFF75;
+				font-weight: bold;
+				font-size: 24px;
+				line-height: 32px;
+			}
+		}
+		.highlight_wrapper {
+			margin-top: 6px;
+			overflow: hidden;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 25px;
+		}
+		
+		.text_space {
+			margin-top: 8px;
+		}
+	}
+	
+	.p_problem_1 .bubble {
+		padding: 16px 0 20px;
+	}
+	
+	.p_problem_2 .bubble {
+		padding: 17px 0 45px;
+	}
+
+	.p_problem_3 .bubble {
+    padding: 10px 0 28px;
+	}
+	
+	.p_problem_character {
+		margin-top: 36px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 108px;
+		height: 108px;
+		background-color: #e0e0e0;
+		border-radius: 50%;
+		overflow: hidden;
+	}
+	
+	.p_problem_character img {
+		width: 100%;
+		height: auto;
+	}
+}

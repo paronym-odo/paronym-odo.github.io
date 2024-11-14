@@ -1,0 +1,36 @@
+@use "../setting/index" as *;
+
+// --------------------------------------------------
+
+.l_header {
+	padding: 30px;
+	background: #F4F4F5;
+
+	@include w600 {
+		padding: 40px 60px;
+	}
+
+	@include w1400 {
+		padding: 40px 100px;
+	}
+
+	h1 {
+		margin: 0;
+		font-size: 10px;
+		line-height: 1;
+		text-align: center;
+
+		@include w600 {
+			text-align: left;
+		}
+
+		img {
+			width: auto;
+			height: 30px;
+
+			@include w600 {
+				height: 48px;
+			}
+		}
+	}
+}

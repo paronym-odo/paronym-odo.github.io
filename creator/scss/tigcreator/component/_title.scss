@@ -1,0 +1,43 @@
+@use "../setting/index" as *;
+
+// --------------------------------------------------
+
+.c_titleOrnament {
+	color: $color_darkBlue;
+	font-size: 20px;
+	line-height: 1;
+	font-family: "Univers", "Noto Sans JP", sans-serif;
+	text-align: center;
+
+	@include w600 {
+		font-size: 28px;
+	}
+
+	&::after {
+		display: block;
+		width: 55px;
+		height: 3px;
+		margin: 10px auto 0;
+		border-radius: 1.5px;
+		background: linear-gradient(100deg, $background_gradation);
+		content: "";
+
+		@include w600 {
+			width: 100px;
+			margin: 15px auto 0;
+		}
+	}
+}
+
+.c_title {
+	margin: 20px 0 0;
+	color: $color_darkBlue;
+	font-size: 26px;
+	line-height: 1;
+	text-align: center;
+
+	@include w600 {
+		margin: 50px 0 0;
+		font-size: 40px;
+	}
+}

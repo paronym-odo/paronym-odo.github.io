@@ -1,0 +1,63 @@
+$w400: 400px;
+$w600: 600px;
+$w800: 800px;
+$w1000: 1000px;
+$w1200: 1200px;
+$w1400: 1400px;
+$w1600: 1600px;
+
+@mixin w400 {
+	@media (min-width: ($w400)) {
+		@content;
+	}
+}
+
+@mixin w600 {
+	@media (min-width: ($w600)) {
+		@content;
+	}
+}
+
+@mixin w800 {
+	@media (min-width: ($w800)) {
+		@content;
+	}
+}
+
+@mixin w1000 {
+	@media (min-width: ($w1000)) {
+		@content;
+	}
+}
+
+@mixin w1200 {
+	@media (min-width: ($w1200)) {
+		@content;
+	}
+}
+
+@mixin w1400 {
+	@media (min-width: ($w1400)) {
+		@content;
+	}
+}
+
+@mixin w1600 {
+	@media (min-width: ($w1600)) {
+		@content;
+	}
+}
+
+@mixin mw999 {
+	@media (max-width: ($w1000 - 1px)) {
+		@content;
+	}
+}
+
+// --------------------------------------------------
+
+@mixin hover {
+	@media (hover: hover) and (pointer: fine) {
+		@content;
+	}
+}

@@ -1,0 +1,200 @@
+@use "../setting/index" as *;
+
+// --------------------------------------------------
+
+.p_tutorial {
+	padding: 60px 0 0;
+	overflow: hidden;
+	background: #F6F7F8 url(../img/tigcreator/tutorial_background.svg) center / cover;
+
+	@include w600 {
+		padding: 100px 0 0;
+	}
+
+	@include w1200 {
+		padding: 120px 0 0;
+	}
+}
+
+.p_tutorial_container {
+	max-width: 1080px;
+	margin: 0 auto;
+	padding: 0 30px;
+
+	@include w600 {
+		padding: 0 80px;
+	}
+
+	@include w1600 {
+		max-width: 1440px;
+	}
+}
+
+.p_tutorial_layout {
+	position: relative;
+	max-width: 600px;
+	margin: 0 auto;
+
+	@include w1200 {
+		max-width: none;
+	}
+}
+
+.p_tutorial_body {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	transform: translateY(20px);
+	aspect-ratio: 1 / 1;
+	border-radius: 50%;
+	background: rgba($background_white, 0.75);
+
+	@include w1200 {
+		position: absolute;
+		top: 0;
+		right: 0;
+		transform: translateY(0);
+		width: 60%;
+	}
+
+	> * {
+		padding-right: 10%;
+		padding-left: 10%;
+
+		@include w600 {
+			padding-right: 19%;
+			padding-left: 19%;
+		}
+	}
+
+	.p_tutorial_titleOrnament {
+		@include w1200 {
+			text-align: left;
+		}
+
+		&::after {
+			@include w1200 {
+				margin-right: 0;
+				margin-left: 0;
+			}
+		}
+	}
+
+	.p_tutorial_title {
+		@include w1200 {
+			text-align: left;
+		}
+	}
+
+	p {
+		margin: 20px 0 0;
+		color: #333;
+		font-size: min(14px, 3.12vw);
+		text-align: center;
+
+		@include w600 {
+			margin: 50px 0 0;
+			font-size: 16px;
+		}
+
+		@include w1200 {
+			text-align: justify;
+		}
+	}
+}
+
+@keyframes videoButton {
+	0% {
+		opacity: 1;
+	}
+	50% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+.p_tutorial_image {
+	position: relative;
+	z-index: 1;
+	text-align: right;
+
+	@include w1200 {
+		width: 42%;
+	}
+
+	img {
+		width: 90%;
+		height: auto;
+
+		@include w1200 {
+			width: 100%;
+		}
+
+		&.p_tutorial_image_button {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			z-index: 1;
+			transform: translate(-50%, -40%);
+			width: 40%;
+			height: auto;
+			animation: videoButton 2s ease infinite;
+
+			@include w1200 {
+				left: 44.5%;
+			}
+		}
+	}
+}
+
+.p_tutorial_video {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 99999;
+	width: 100vw;
+	height: 100vh;
+	background: rgba(#000, 0.9);
+
+	.p_tutorial_video_close {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+
+		&::before {
+			display: block;
+			position: absolute;
+			top: 10px;
+			right: 10px;
+			width: 20px;
+			color: #FFF;
+			font-weight: bold;
+			font-size: 20px;
+			line-height: 20px;
+			text-align: center;
+			content: "×";
+		}
+	}
+
+	video {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		z-index: 1;
+		transform: translate(-50%, -50%);
+		width: auto;
+		max-width: calc(100% - (40px * 2));
+		height: auto;
+		max-height: calc(100% - (40px * 2));
+
+		@include w600 {
+			max-width: calc(100% - (80px * 2));
+			max-height: calc(100% - (80px * 2));
+		}
+	}
+}

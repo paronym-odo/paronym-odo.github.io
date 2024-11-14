@@ -1,0 +1,158 @@
+@use "../setting/index" as *;
+
+// --------------------------------------------------
+
+.p_faq {
+	padding: 80px 0;
+	background: $background_gray;
+
+	@include w600 {
+		padding: 120px 0;
+	}
+}
+
+.p_faq_container {
+	max-width: 1440px;
+	margin: 0 auto;
+	padding: 0 30px;
+
+	@include w600 {
+		padding: 0 80px;
+	}
+}
+
+.p_faq_list {
+	list-style: none;
+	margin: 60px 0 0;
+	padding: 0;
+
+	@include w600 {
+		margin: 100px 0 0;
+	}
+
+	li {
+		border-radius: 12px;
+		background: $background_white;
+
+		@include w600 {
+			border-radius: 16px;
+		}
+
+		&:not(:last-of-type) {
+			margin-bottom: 10px;
+
+			@include w600 {
+				margin-bottom: 20px;
+			}
+		}
+
+		h3 {
+			display: flex;
+			align-items: flex-start;
+			gap: 10px;
+			position: relative;
+			margin: 0;
+			padding: 15px 40px 15px 15px;
+			font-size: 14px;
+			line-height: 22px;
+			cursor: pointer;
+
+			@include w600 {
+				gap: 40px;
+				padding: 40px 80px 40px 40px;
+				font-size: 16px;
+				line-height: 30px;
+			}
+
+			img {
+				width: 22px;
+				height: auto;
+
+				@include w600 {
+					width: 30px;
+				}
+			}
+
+			&::after {
+				display: block;
+				position: absolute;
+				top: 50%;
+				right: 15px;
+				transform: translateY(-50%);
+				width: 18px;
+				height: 18px;
+				background: url(../img/tigcreator/faq_icon_plus.webp) center / cover;
+				content: "";
+
+				@include w600 {
+					right: 40px;
+					width: 26px;
+					height: 26px;
+				}
+			}
+
+			&.js_active {
+				&::after {
+					background: url(../img/tigcreator/faq_icon_minus.webp) center / cover;
+				}
+			}
+		}
+
+		p {
+			display: none;
+			margin: 0;
+			color: #555;
+			font-size: 14px;
+			line-height: 22px;
+
+			@include w600 {
+				font-size: 16px;
+				line-height: 30px;
+			}
+
+			span {
+				display: flex;
+				align-items: flex-start;
+				gap: 10px;
+				position: relative;
+				padding: 15px;
+
+				@include w600 {
+					gap: 40px;
+					padding: 40px;
+				}
+
+				&::before {
+					display: block;
+					position: absolute;
+					top: 0;
+					left: 50%;
+					transform: translateX(-50%);
+					width: calc(100% - (15px * 2));
+					height: 3px;
+					border-top: 3px dotted #CCC;
+					content: "";
+
+					@include w600 {
+						width: calc(100% - (40px * 2));
+					}
+				}
+
+				img {
+					width: 22px;
+					height: auto;
+
+					@include w600 {
+						width: 30px;
+					}
+				}
+			}
+		}
+
+		&:first-of-type {
+			p {
+				display: block;
+			}
+		}
+	}
+}
