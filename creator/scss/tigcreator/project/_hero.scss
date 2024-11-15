@@ -7,18 +7,25 @@
 	overflow: hidden;
 	background: $background_lightBlue;
 	padding-bottom: 2.5vw;
+	// aspect-ratio: 375/769;
+	aspect-ratio: 408/769;
+
+	@include w1000 {
+		aspect-ratio: auto;
+	}
 }
 
 .p_hero_catchcopy01 {
 	position: absolute;
-  top: 2%;
-  left: 5%;
   width: 90%;
 	z-index: 5;
 	opacity: 0;
 	width: 100%;
 	margin: 0;
 	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 
 	@include w1000 {
 		position: relative;
@@ -28,15 +35,14 @@
 		padding-top: 2.7vw;
 		margin-left: 11.6vw;
 		text-align: left;
-		display: flex;
-		flex-direction: column;
 		justify-content: left;
+		align-items: start;
 	}
 
 	.copy_sub {
 		border-bottom: 4px solid #000;
 		width: fit-content;
-		font-size: 1.56vw;
+		font-size: 4.3vw;
 		font-weight: bold;
 
 		@include w1000 {
@@ -46,9 +52,14 @@
 	}
 
 	.copy_main {
-		margin-top: 0.1em;
 		font-weight: bold;
-		font-size: 4.37vw;
+		font-size: 9.1vw;
+		line-height: 11vw;
+    margin-top: 3vw;
+
+		p {
+			margin: 0;
+		}
 
 		@include w1000 {
 			font-size: 4.45vw;
@@ -60,15 +71,15 @@
 }
 
 .stats-container {
-	margin-top: 32px;
+	margin-top: 88vw;
   display: flex;
   align-items: center;
   /* 各項目を均等配置 */
   background-color: #fff;
   border-radius: 16px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.14);
-  width: 90%;
-  padding: 10px;
+  box-shadow: 0px 1vw 2vw rgba(0, 0, 0, 0.14);
+  width: 93.5%;
+	padding: 2.4vw 4vw 3.1vw;
   height: auto;
   font-weight: bold;
   z-index: 5;
@@ -78,6 +89,7 @@
 		height: 7.7vw;
 		margin-top: 3vw;
 		padding: 1vw 2.4vw;
+		box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.14);
 	}
 
 	.status_cel {
@@ -86,44 +98,67 @@
 	.status_text {
 		margin: 0;
 		text-align: center;
-		font-size: 1.08vw;
+		font-size: 2.5vw;
 		font-weight: bold;
 		white-space: nowrap;
 	}
-	
+
 	.status_ratio {
 		margin: 0;
 		text-align: center;
-		font-size: 2vw;
+		font-size: 5.2vw;
 		font-weight: bold;
 		white-space: nowrap;
 
+		@include w1000 {
+			font-size: 2vw;
+		}
+
 		.highlight-number {
-			font-size: 48px;
 			color: #FF580D;
-			line-height: 2vw;
-			font-size: 3.5vw;
+			font-size: 10vw;
+			line-height: 12vw;
+			letter-spacing: -0.3vw;
+
+			@include w1000 {
+				font-size: 3.5vw;
+				line-height: 2vw;
+				letter-spacing: -0.1vw;
+			}
 		}
 	}
 
 	.separator {
-		min-width: 6px;
-    height: 100%;
-    background-image: radial-gradient(circle, #ddd 3px, transparent 3px);
-    background-size: 6px 12.5px;
+		min-width: 2vw;
+    height: 20.5vw;
+    background-image: radial-gradient(circle, #ECEBF4 0.7vw, transparent 0.7vw);
+    background-size: 2vw 3.5vw;
     margin: 0;
-    margin-left: 19px;
-    margin-right: 16px;
+    margin-left: 1.6vw;
+    margin-right: 1.8vw;
+    margin-top: -1vw;
+
+		@include w1000 {
+			min-width: 6px;
+			height: 100%;
+			background-image: radial-gradient(circle, #ECEBF4 3px, transparent 3px);
+			background-size: 6px 12.5px;
+			margin: 0;
+			margin-left: 19px;
+			margin-right: 16px;
+		}
 	}
 }
 
 .title-buttons {
   display: flex;
   flex-direction: column;
-  gap: 10px;
-	margin-top: 40px;
+	margin-top: 4.5vw;
+	gap: 3vw;
+	width: 91%;
 
 	@include w1000 {
+		width: auto;
 		flex-direction: row;
 		gap: 1.7vw;
 		margin-top: 3vw;
@@ -139,17 +174,22 @@
 		color: #ffffff;
 		width: 100%;
 		height: 13.3333vw;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
 
 		@include w1000 {
 			border-radius: 1000px;
 			width: 21.4vw;
 			height: 6.1vw;
+			flex-direction: column;
 		}
 	}
 
 	.secondary-button {
 		font-size: 18px;
-		border-radius: 30px;
+		border-radius: 1000px;
 		border: none;
 		cursor: pointer;
 		text-align: center;
@@ -158,6 +198,10 @@
 		width: 100%;
 		height: 13.3333vw;
 		box-sizing: border-box;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
 
 		@include w1000 {
 			border-radius: 1000px;
@@ -167,19 +211,25 @@
 	}
 
 	.small-text-button {
-		font-size: 12px;
+		font-size: 3.3vw;
 		font-weight: normal;
+		margin: 0;
+		margin-left: 1vw;
 
 		@include w1000 {
+			margin: 0;
 			font-size: 1vw;
 		}
 	}
 
 	.large-text-button {
-		font-size: 18px;
+		font-size: 5vw;
 		font-weight: bold;
+		margin: 0;
+		margin-left: 1vw;
 
 		@include w1000 {
+			margin: 0;
 			font-size: 1.6vw;
 		}
 	}
@@ -212,11 +262,11 @@
 .p_hero_image01 {
   display: inline-block;
 	position: absolute;
-  top: 27%;
-	left: 50%;
+	top: 22.6%;
+	left: 50.7%;
 	z-index: 2;
 	transform: translateX(-50%);
-  width: 38.5vw;
+	width: 37.5vw;
   height: auto;
   border-radius: 20px;
 
@@ -236,11 +286,11 @@
 .p_hero_image02 {
   position: absolute;
   bottom: 0;
-  top: 26%;
-  left: 66%;
-  z-index: 1;
-  transform: translateX(-50%);
-  width: 114vw;
+	top: 21%;
+	left: 67.6%;
+	z-index: 1;
+	transform: translateX(-50%);
+	width: 120vw;
 
 	@include w1000 {
 		left: 57.1%;
@@ -258,11 +308,11 @@
 .p_hero_image03 {
   position: absolute;
   bottom: 0;
-  top: 25%;
-  left: 64%;
-  z-index: 4;
-  transform: translateX(-50%);
-  width: 114vw;
+	top: 21%;
+	left: 67%;
+	z-index: 4;
+	transform: translateX(-50%);
+	width: 118vw;
 
 	@include w1000 {
 		left: 57.2%;
@@ -329,32 +379,39 @@
 }
 
 .p_company_logos {
-	padding-block: 24px;
+	padding-block: 6.2vw;
 
 	@include w1000 {
-    overflow-x: auto;
+		padding-block: 24px;
 	}
 
 	.logo_list {
 		display: flex;
 		align-items: center;
-		justify-content: center;
 		flex-direction: row;
-		gap: 16px;
+		gap: 4vw;
+		overflow-x: scroll;
+		padding-inline: 4vw;
 
 		@include w1000 {
 			flex-wrap: nowrap;
+			justify-content: center;
+			gap: 16px;
+			padding-inline: 0;
+			overflow-x: auto;
 		}
 	}
 
 	.logo_col {
-		height: 64px;
+		height: 12.8vw;
+		flex-shrink: 0;
 
 		img {
 			height: 100%;
 		}
 
 		@include w1000 {
+			height: 64px;
 		}
 	}
 }
