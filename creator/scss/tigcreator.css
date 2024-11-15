@@ -696,6 +696,7 @@ a {
 }
 @media (min-width: 1000px) {
   .stats-container {
+    justify-content: center;
     width: 39.3vw;
     height: 7.7vw;
     margin-top: 3vw;
@@ -709,6 +710,11 @@ a {
   font-size: 2.5vw;
   font-weight: bold;
   white-space: nowrap;
+}
+@media (min-width: 1000px) {
+  .stats-container .status_text {
+    font-size: 1.08vw;
+  }
 }
 .stats-container .status_ratio {
   margin: 0;
@@ -1637,7 +1643,7 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 9.6vw;
+  justify-content: center;
 }
 @media (min-width: 1000px) {
   .p_featuer_02 .step_icon_wrapper {
@@ -1654,9 +1660,6 @@ a {
     margin: 0;
     justify-content: start;
   }
-}
-.p_featuer_02 .step_icon_wrapper.bottom {
-  margin-top: 11vw;
 }
 @media (min-width: 1000px) {
   .p_featuer_02 .step_icon_wrapper.bottom {

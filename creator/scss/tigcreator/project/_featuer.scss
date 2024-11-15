@@ -369,7 +369,8 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		margin-top: 9.6vw;
+    justify-content: center;
+		// margin-top: 9.6vw;
 
 		@include w1000 {
 			margin-top: 0;
@@ -387,7 +388,7 @@
 		}
 
 		&.bottom {
-			margin-top: 11vw;
+			// margin-top: 11vw;
 
 			@include w1000 {
 				margin: 0;

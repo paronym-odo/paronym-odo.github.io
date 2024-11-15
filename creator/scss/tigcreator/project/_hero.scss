@@ -85,6 +85,7 @@
   z-index: 5;
 
 	@include w1000 {
+		justify-content: center;
 		width: 39.3vw;
 		height: 7.7vw;
 		margin-top: 3vw;
@@ -101,6 +102,10 @@
 		font-size: 2.5vw;
 		font-weight: bold;
 		white-space: nowrap;
+
+		@include w1000 {
+			font-size: 1.08vw;
+		}
 	}
 
 	.status_ratio {
