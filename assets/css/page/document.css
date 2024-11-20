@@ -1,0 +1,108 @@
+@charset "UTF-8";
+
+/* ================================================== */
+/* ページ：ドキュメント・ダウンロード(.page-document)
+/* ================================================== */
+.page-document .description {
+  padding-top: 40px;
+  padding-bottom: 43px;
+  line-height: 28px;
+  font-size: 24px;
+}
+
+/* ===================================================================================================================================================== */
+/*
+/* SPデザイン
+/*
+/* ===================================================================================================================================================== */
+@media screen and (max-width:  900px) {
+  
+  /* ================================================== */
+  /* ページ：ドキュメント・ダウンロード(.page-document)
+  /* ================================================== */
+  
+  .page-document .entry-header h1,
+  .page-thanks  .entry-header h1 {
+    margin-top: 39px;
+    margin-bottom: 39px;
+    font-size: 30px;
+    line-height: 35px;
+  }
+  .page-document .entry-header h1 span,
+  .page-thanks  .entry-header h1 span{
+    font-size: 16px;
+  }
+  .page-document .entry-content .description {
+    margin-top: 14px;
+    line-height: 40px;
+  }
+  
+  .page-document .contact .layoutOuter {
+    padding-top: 105px;
+    padding-bottom: 103px;
+  }
+  .page-document .contact .image img {
+    width: 120px;
+    height: 85px;
+  }
+  .page-document .contact .description {
+    font-size: 18px;
+    line-height: 1.7em;
+    font-weight: 400;
+    padding-top: 37px;
+    padding-bottom: 0;
+  }
+  .page-document .contact .button {
+    margin-top: 34px;
+    width: 312px;
+  }
+  .page-document .contact .button a {
+    width: 312px;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 30px;
+    font-size: 20px;
+  }
+  .page-document .contact .button img {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 18px;
+    width: 8px;
+    height: 12.812px;
+    margin: auto;
+  }
+  
+  #mw_wp_form_mw-wp-form-330 h2 {
+    font-size: 16px;
+    margin-top: 27px;
+    margin-bottom: 18px;
+  }
+  #mw_wp_form_mw-wp-form-330 p {
+    font-size: 16px;
+    line-height: 26px;
+  }
+  #mw_wp_form_mw-wp-form-330 h3{
+    width: 100%;
+    max-width: 326px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+    margin-top: 42px;
+  }
+  #mw_wp_form_mw-wp-form-330 .comments {
+    margin-top: 15px;
+    font-size: 13px;
+    line-height: 20px;
+  }
+}
+@media screen and (max-width:  900px) and (-webkit-min-device-pixel-ratio: 2) {
+}
+@media screen and (max-width:  900px) and (-webkit-min-device-pixel-ratio: 3) {
+}
+  
+  
+  
+  
+  
+  

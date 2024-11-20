@@ -1,0 +1,494 @@
+@charset "UTF-8";
+
+/* ================================================== */
+/* アーカイブ：事例紹介(.archive .usecase)
+/* ================================================== */
+
+/* ナビゲーションメニュー部 */
+.archive .usecase .tags-navi{
+  padding: 40px 2vw 0;
+}
+.archive .usecase .tags-navi .content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style: none;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+}
+.archive .usecase .tags-navi .content li {
+  display: flex;
+  margin: 10px 5px 0;
+}
+
+.archive .usecase .tags-navi a {
+    display: block;
+    padding: 3px 20px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    min-width: 160px;
+    background-color: #000;
+    border-radius: 30px;
+}
+
+/* ヘッダー部 */
+.archive .usecase .title {
+  padding-top: 50px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 35px;
+}
+.archive .usecase .description {
+  padding-top: 16px;
+  padding-bottom: 128px;
+  font-size: 20px;
+  line-height: 20px;
+  text-align: center;
+}
+
+/* スライダー設定 */
+.archive .usecase .tops {
+  padding-bottom: 100px;
+}
+.archive .usecase .tops .posts_thumb {
+  width: 100%;
+  max-width: 100vw;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+}
+.archive .usecase .tops .posts_thumb .iframe {
+  padding: 0 2vw;
+}
+.archive .usecase .tops .posts_thumb .iframe img {
+  width: 100%;
+  height: 32.2vw;
+  object-fit: cover;
+  margin-bottom: 50px;
+  background-color: lightgray;
+  border-radius:  4.8vw;
+  margin: 0 auto;
+}
+.archive .usecase .tops .posts_info {
+  width: 57.3vw;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+}
+.archive .usecase .tops .posts_info .information {
+  font-size: 16px;
+  padding-bottom: 10px;
+}
+.archive .usecase .tops .posts_info .description {
+  padding-top: 0;
+  padding-bottom: 0;
+  text-align: left;
+  font-size: 16px;
+  line-height: 28px;
+}
+/* タグ一覧 */
+.archive .usecase .tags .title {
+  padding-top: 20px;
+  padding-bottom: 18px;
+  font-size: 16px;
+  line-height: 16px;
+  text-align: center;
+}
+.archive .usecase .tags .content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  list-style: none;
+  width: 100%;
+  max-width: 540px;
+  margin: 0 auto;
+  padding: 0;
+}
+.archive .usecase .tags .content li a{
+  display: block;
+  width: 100%;
+  padding: 4px 14px;
+  text-align: center;
+  text-decoration: none;
+  border: solid 1px #cccccc;
+  border-radius: 5px;
+  color: #666666;
+}
+/* 投稿一覧 */
+.archive .usecase .posts {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 1090px;
+  padding-top: 95px;
+  margin: 0 auto;
+}
+.archive .usecase .posts article a {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+  max-width: 510px;
+  padding-bottom: 100px;
+  text-decoration: none;
+  color: black;
+}
+.archive .usecase .posts article {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 510px;
+  padding-bottom: 100px;
+}
+.archive .usecase .posts article .image {
+  height: 270px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.archive .usecase .posts article .image img {
+  width: 100%;
+}
+.archive .usecase .posts article .title {
+  width: 100%;
+  height: 100px;
+  padding-top: 26px;
+  border-bottom: solid 1px #333333;
+  text-align: center;
+  line-height: 25px;
+  font-size: 16px;
+  font-weight: 500;
+}
+.archive .usecase .posts article .category {
+  width: 50%;
+  height: 36px;
+  text-align: left;
+  line-height: 36px;
+  font-size: 14px;
+  font-weight: 400;
+  display:flex;
+  white-space: nowrap;
+}
+.service_tag {
+  background-color: black;
+  color: white;
+  padding: 0 0.5rem;
+  margin: 0.4rem 0.5rem 0.4rem 0;
+  line-height: 2.8rem;
+  white-space: nowrap;
+  width: auto;
+}
+
+.archive .usecase .posts article .information {
+  width: 50%;
+  height: 36px;
+  text-align: right;
+  line-height: 36px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.archive .usecase a {
+  color: #000;
+  text-decoration: none;
+}
+
+.learnmore .button {
+  margin-top: 3em;
+}
+.learnmore .button a {
+  display: block;
+  width: 240px;
+  height: 46px;
+  margin: 0 auto;
+  line-height: 46px;
+  border-radius: 23px;
+  background-color: black;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 700;
+  color: white;
+}
+
+/* ページネーション */
+.archive .usecase .pagenations {
+  padding-bottom: 185px;
+}
+.archive .usecase .pagenations ul {
+  padding: 0;
+  text-align: center;
+  list-style: none;
+}
+.archive .usecase .pagenations ul li {
+  display: inline-block;
+  line-height: 20px;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 0 10px;
+}
+.archive .usecase .pagenations ul li a {
+  text-decoration: none;
+  color: black;
+}
+/* お問い合わせ */
+.archive .usecase .contact .layoutOuter {
+  background-color: #eeeeee;
+  padding: 80px 0;
+}
+.archive .usecase .contact .image img {
+  display: block;
+  width: 92px;
+  height: 65px;
+  margin: 0 auto;
+}
+.archive .usecase .contact .description {
+  padding-top: 31px;
+  padding-bottom: 0;
+  line-height: 28px;
+  text-align: center;
+}
+
+.archive .usecase .contact .button {
+  position: relative;
+  width: 240px;
+  margin: 0 auto;
+  margin-top: 29px;
+}
+.archive .usecase .contact .button a {
+  display: block;
+  width: 240px;
+  height: 46px;
+  margin: 0 auto;
+  line-height: 46px;
+  border-radius: 23px;
+  background-color: black;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 700;
+  color: white;
+}
+.archive .usecase .contact .button img {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 14px;
+  width: 6.161px;
+  height: 9.855px;
+  margin: auto;
+}
+.dropdown-wrapper {
+  position:relative;
+  width: 220px;
+}
+.dropdown-label {
+  position: relative;
+  outline: solid black 1px;
+  padding: 1rem;
+  text-align: center;
+}
+.dropdown-label-noSelect {
+  color:gray;
+}
+.dropdown-label:after {
+  position: absolute;
+  display: block;
+  content: '';
+  width: 8px; 
+  height: 8px;
+  top: 50%; 
+  right: 12px;
+  margin-top: -3px;
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+  transform: rotate(45deg) translateY(-50%);
+}
+.dropdown {
+  position: absolute; 
+  list-style: none; 
+  color: white; 
+  margin: 0;
+  margin-left: -1px; 
+  padding: 0; 
+  width: 101%;
+  text-align: center;
+  display: none;
+	z-index: 1;
+}
+.dropdown li {
+  padding: 1rem;
+  background-color: black;
+  opacity: .8;
+}
+.dropdown li:hover {
+  background-color: black;
+  opacity: .7;
+}
+.dropdown-list {
+  display: flex;
+  gap: 5rem;
+  flex-wrap: nowrap;
+  justify-content: center;
+  margin-top: 2rem;
+}
+.dropdown-title {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+/* ===================================================================================================================================================== */
+/*
+/* SPデザイン
+/*
+/* ===================================================================================================================================================== */
+@media screen and (max-width:  900px) {
+  /* ================================================== */
+  /* アーカイブ：事例紹介(.archive .usecase)
+  /* ================================================== */
+  .archive .usecase > .title{
+    font-size: 30px;
+    padding-top: 40px;
+  }
+  .archive .usecase > .description {
+    font-size: 16px;
+    padding-top: 13px;
+    padding-bottom: 44px;
+    border: none;
+  }
+  .archive .usecase .tops .posts_thumb .iframe img {
+    width: 84.5vw;
+    height: 47.6vw;
+  }
+  .archive .usecase .tops {
+    padding-bottom: 0;
+  }
+ .archive .usecase .tops .posts_info {
+    width: 84.5vw;
+  }
+ .archive .usecase .slick-prev {
+    top: 0;
+    bottom: 0;
+    left: 2vw;
+    margin: auto;
+  }
+  .archive .usecase .slick-next {
+    top: 0;
+    bottom: 0;
+    right: 2vw;
+    margin: auto;
+  }
+  .archive .usecase .tags .title {
+    font-size: 18px;
+    font-weight: 400;
+    padding-bottom: 26px;
+  }
+  .archive .usecase .tags .content {
+    max-width: 291px;
+  }
+  .archive .usecase .tags .content li a {
+    /*width: 115px;*/
+    height: 30px;
+    line-height: 30px;
+    margin-bottom: 14px;
+    padding: 0 5px;
+    border-radius: 3px;
+  }
+  .archive .usecase .posts {
+    padding-top: 88px;
+  }
+  .archive .usecase .posts a {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .archive .usecase .posts article {
+    padding-bottom: 60px;
+    max-width: 314px;
+    margin: 0 auto;
+	  height: 420px;
+  }
+  .archive .usecase .posts article .title {
+    height: auto;
+    padding-top: 5px;
+    padding-bottom: 7px;
+    line-height: 32px;
+    font-size: 18px;
+  }
+  .archive .usecase .posts article .category {
+    width: 100%;
+    font-size: 12px;
+  }
+  .archive .usecase .posts article .information {
+    width: 100%;
+    line-height: 10px;
+    text-align: left;
+    font-size: 12px;
+  }
+	  .archive .usecase .posts article .image {
+    height: 200px;
+  }
+  .dropdown-list {
+    flex-wrap: wrap;
+  }
+  .dropdown-wrapper {
+    width: 70%;
+  }
+	.dropdown {
+  width: 100.8%;
+}
+  .archive .usecase .pagenations {
+    padding-bottom: 16px;
+  }
+  .archive .usecase .pagenations ul {
+    margin-top: 0;
+  }
+  .archive .usecase .contact .layoutOuter {
+    padding-top: 105px;
+    padding-bottom: 103px;
+  }
+  .archive .usecase .contact .image img {
+    width: 120px;
+    height: 85px;
+  }
+  .archive .usecase .contact .description {
+    font-size: 18px;
+    line-height: 1.7em;
+    font-weight: 400;
+    padding-top: 37px;
+    padding-bottom: 0;
+  }
+  .archive .usecase .contact .button {
+    margin-top: 34px;
+    width: 312px;
+  }
+  .archive .usecase .contact .button a {
+    width: 312px;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 30px;
+    font-size: 20px;
+  }
+  .archive .usecase .contact .button img {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 18px;
+    width: 8px;
+    height: 12.812px;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width:  900px) and (-webkit-min-device-pixel-ratio: 2) {
+}
+@media screen and (max-width:  900px) and (-webkit-min-device-pixel-ratio: 3) {
+}
+
+
+
+
+

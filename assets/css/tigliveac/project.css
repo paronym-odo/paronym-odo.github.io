@@ -1,0 +1,42 @@
+/* Project/account form
+ ========================================== */
+.p-accountForm,.p-accountThanks{
+  padding-bottom: 16.0rem;
+}
+
+.p-accountForm__text{
+  text-align: center;
+}
+  @media screen and (max-width: 767px) {
+    .p-accountForm__text{
+      text-align: left;
+    }
+  }
+
+.p-accountForm .c-form{
+  max-width: 66.0rem;
+  margin: 0 auto;
+}
+  @media screen and (max-width: 767px) {
+    .p-accountForm .c-form{
+      margin-top: 4.0rem;
+    }
+  }
+
+.p-accountThanks{
+  text-align: center;
+}
+  @media screen and (max-width: 767px) {
+    .p-accountThanks{
+      text-align: left;
+    }
+  }
+
+.p-accountThanks .c-block{
+  max-width: 66.0rem;
+  margin: 0 auto;
+}
+
+.p-accountThanks__btn{
+    text-align: center;
+}

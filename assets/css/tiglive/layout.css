@@ -1,0 +1,381 @@
+/* Layout/header
+ ========================================== */
+.l-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 98;
+  display: flex;
+  width: 100%;
+  transition: .8s;
+}
+  @media screen and (max-width: 767px) {
+    .l-header {
+     z-index: 500;
+    }
+  }
+
+.l-header *{
+  transition: .6s;
+}
+
+.l-header__inner {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0  0 0 4.0rem;
+}
+  @media screen and (max-width: 767px) {
+    .l-header__inner {
+    padding: 0  0 0 2.0rem;
+    }
+  }
+
+.l-header__logo {
+  display: flex;
+}
+
+.l-header__logo img {
+ width: auto;
+ max-width: 100%;
+ max-height: 4.8rem;
+}
+  @media screen and (max-width: 767px) {
+    .l-header__logo img {
+      height: auto;
+      max-height: 4.0rem;
+    }
+  }
+
+.l-header__nav {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  margin-left: auto;
+}
+
+.l-header__navItem {
+  text-align: center;
+}
+  @media screen and (max-width: 767px) {
+    .l-header__navItem {
+     margin: 0;
+    }
+  }
+
+.l-header__btn a {
+  display: block;
+  padding: 1.6rem 2.0rem;
+  color: #FFF;
+  font-size: 1.6rem;
+  line-height: 1;
+  letter-spacing: 0.1em;
+  text-align: center;
+  text-decoration: none!important;
+}
+  @media screen and (max-width: 767px) {
+    .l-header__btn a {
+     padding: 1.0rem 1.6rem;
+     font-size: 1.2rem;
+    }
+  }
+
+.l-header__btn a::before {
+  display: block;
+  content: "";
+  width: 5.2rem;
+  height: 5.2rem;
+  margin: 0 auto;
+}
+  @media screen and (max-width: 767px) {
+    .l-header__btn a::before{
+      width: 4.8rem;
+      height: 4.8rem;
+    }
+  }
+
+.l-header__btn.-download a{
+  background:rgba(58,192,196,0.8);
+}
+
+.l-header__btn.-download a::before {
+  background: url(../../img/tiglive/icon_doc.png) no-repeat;
+  background-size: cover;
+}
+
+.l-header__btn.-mail a{
+background: transparent linear-gradient(270deg, #A940C9 0%, #D12F91 100%);
+}
+
+.l-header__btn.-mail a::before {
+  background: url(../../img/tiglive/icon_mail.png) no-repeat;
+  background-size: cover;
+}
+
+
+.l-header.is-animation{
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.l-header.is-animation .l-header__logo img {
+ width: auto;
+ max-width: 100%;
+ max-height: 4.0rem;
+}
+
+.l-header.is-animation .l-header__btn a {
+  display: block;
+  padding: 1.0rem 1.6rem;
+  font-size: 1.2rem;
+}
+
+.l-header.is-animation .l-header__btn a::before {
+  display: block;
+  content: "";
+  width: 4.8rem;
+  height: 4.8rem;
+  margin: 0 auto;
+}
+
+/* Layout/mainvisual
+ ========================================== */
+.l-mainvisual{
+  position: relative;
+  min-height: 46.6vw;
+}
+  @media screen and (max-width: 767px) {
+    .l-mainvisual {
+      min-height: 75.5rem;
+    }
+  }
+
+.l-mainvisual__catch{
+  position: absolute;
+  z-index: 80;
+  width: 100%;
+  height: 100%;
+  padding-top: 12.5rem;
+}
+
+
+.l-mv__catch__text{
+  margin-top: 3.2rem;
+}
+
+@media screen and (max-width: 767px) {
+  .l-mainvisual__catch{
+    display: block;
+    width: 100%;
+    height: auto;
+    padding: 8.4rem 0 0;
+  }
+  .l-mv__catch__text{
+    margin-top: 1.6rem;
+    font-size: 1.8rem;
+  }
+  .l-mainvisual__catch .c-btn{
+    display: block;
+    width: 88%;
+    font-size: 1.8rem;
+    padding: 1.6rem 4rem;
+    margin: 2rem auto 0;
+  }
+}
+
+.l-mainvisual__movie{
+  position: absolute;
+  z-index: 11;
+  right: 16.1%;
+  bottom: 4.5%;
+  display: block;
+  width: auto;
+  height: 35.2vw;
+  border-radius: 2vw;
+}
+
+.l-mainvisual__layer{
+  position: absolute;
+  z-index: 10;
+  width: 100%;
+  padding-top: 46.6vw;
+  background: url("../../img/tiglivev2/mainVisual_layer.png") center no-repeat;
+  background-size: cover;
+}
+  @media screen and (max-width: 767px) {
+    .l-mainvisual__layer {
+      padding-top: 75.5rem;
+      background: url("../../img/tiglivev2/mainVisual_layer-sp.png") 50% 60% no-repeat;
+      background-size: cover;
+    }
+  }
+
+.l-mainvisual__bg{
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  padding-top: 46.6vw;
+  background: url("../../img/tiglive/mainvisual_bg.jpg") left center repeat-x;
+  background-size: cover;
+  animation: bg_slide 90s linear infinite;
+}
+  @keyframes bg_slide {
+      0% { background-position: 0 0;}
+    100% { background-position: -1914px 0;}
+  }
+  @media screen and (max-width: 767px) {
+    .l-mainvisual__bg {
+      padding-top: 75.5rem;
+    }
+  }
+
+
+/* Layout/logoslide
+ ========================================== */
+.l-logoslide{
+  margin: 1.0rem auto;
+  width: 100%;
+  max-width: 100%;
+}
+
+.l-logoslide .c-slideItem{
+}
+
+.l-logoslide .c-slideItem > img{
+  height: 8.8rem;
+  width: auto;
+  max-width: inherit;
+}
+
+
+/* Layout/footer
+ ========================================== */
+.l-footer {
+  padding-top: 8.0rem;
+  background-color: #24245E;
+  color: #fff;
+}
+
+.l-footer__inner {
+  display: flex;
+  flex-flow: row wrap;
+  align-content: flex-start;
+  justify-content: space-between;
+  width: 88%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.l-footer__info{
+  margin-bottom: 6.0rem;
+}
+
+.l-footer__info__logo{
+  width: 30rem;
+  margin-bottom: 4.0rem;
+}
+
+.l-footer__info__txt{
+  font-size: 1.6rem;
+  dont-weight: 500;
+  letter-spacing: 0.1em;
+}
+
+.l-footer__list {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row nowrap;
+  align-items: flex-start;
+}
+  @media screen and (max-width: 767px) {
+    .l-footer__list {
+     /* display: block; */
+     justify-content: space-around;
+     width: 100%;
+     text-align: left;
+    }
+  }
+
+.l-footer__item{
+  margin-left: 2.0rem;
+}
+  @media screen and (max-width: 767px) {
+    .l-footer__item{
+      margin-left: 0;
+    }
+  }
+
+.l-footer__item a.c-btn{
+  display: flex;
+  flex-flox: row nowrap;
+  align-content: center;
+  align-items: center;
+  font-size: 1.6rem;
+  font-weight: 500;
+  padding: 0.8rem 2.4rem;
+  margin: 0;
+}
+
+.l-footer__item a.c-btn::before {
+  display: block;
+  content: "";
+  width: 3.2rem;
+  height: 3.2rem;
+  margin-right: 0.8rem;
+}
+.l-footer__item a.c-btn::after {
+  display: none;
+}
+  @media screen and (max-width: 767px) {
+    .l-footer__item a.c-btn::before{
+     width: 3.2rem;
+     height: 3.2rem;
+    }
+  }
+
+.l-footer__item a.c-btn.-download{
+  background:rgba(58,192,196,0.8);
+
+}
+.l-footer__item a.c-btn.-download::before {
+  background: url(../../img/tiglive/icon_doc.png) no-repeat;
+  background-size: contain;
+}
+
+.l-footer__item a.c-btn.-mail{
+background: transparent linear-gradient(270deg, #A940C9 0%, #D12F91 100%);
+}
+
+.l-footer__item a.c-btn.-mail::before {
+  background: url(../../img/tiglive/icon_mail.png) no-repeat;
+  background-size: contain;
+}
+
+.l-footer__copy {
+  display: block;
+  margin-top: 4rem;
+  padding: 2.0rem 0;
+  width: 100%;
+  border-top: 1px solid #CCC;
+  font-size: 1.6rem;
+  text-align: right;
+}
+
+@media screen and (max-width: 991px) {
+  .l-footer__copy {
+    margin-top: 4.0rem;
+  }
+}
+
+/* Layout/contact
+ ========================================== */
+.l-contact {
+ position: relative;
+ overflow: hidden;
+}
+.l-contact__inner {
+ width: 31.25%;
+ max-width: 600px;
+ margin: 0 auto;
+}

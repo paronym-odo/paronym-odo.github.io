@@ -1,0 +1,301 @@
+@charset "UTF-8";
+
+/* ================================================== */
+/* アーカイブ：よくある質問(.archive .faq)
+/* ================================================== */
+/* ヘッダー部 */
+.archive .faq > .title {
+  padding-top: 50px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 35px;
+}
+.archive .faq > .description {
+  padding-top: 16px;
+  padding-bottom: 48px;
+  border-bottom: solid 1px #cccccc;
+  font-size: 20px;
+  line-height: 20px;
+  text-align: center;
+}
+
+/* タグ一覧 */
+.archive .faq .categories .title {
+  padding-top: 20px;
+  padding-bottom: 18px;
+  font-size: 16px;
+  line-height: 16px;
+  text-align: center;
+}
+.archive .faq .categories .content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  list-style: none;
+  width: 100%;
+  max-width: 410px;
+  margin: 0 auto;
+  padding: 0;
+  padding-top: 80px;
+}
+.archive .faq .categories .content li {
+  padding-bottom: 10px;
+}
+.archive .faq .categories .content li a{
+  display: block;
+  width: 100%;
+  padding: 4px 14px;
+  text-align: center;
+  text-decoration: none;
+  border: solid 1px #cccccc;
+  border-radius: 5px;
+  color: #666666;
+}
+
+
+/* 投稿一覧 */
+.archive .faq .posts {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding-bottom: 150px;
+}
+.archive .faq .posts h2 {
+  margin: 0;
+  padding-top: 110px;
+  padding-bottom: 50px;
+  line-height: 35px;
+  font-size: 35px;
+  font-weight: 700;
+  text-align: center;
+  
+}
+.archive .faq .posts article {
+  display: flex;
+  border-top: solid 1px #cccccc;
+}
+.archive .faq .posts article:last-child {
+  border-bottom: solid 1px #cccccc;
+}
+.archive .faq .posts article .col {
+  width: calc(100% - 78px);
+  padding-top: 32px;
+  padding-bottom: 26px;
+}
+.archive .faq .posts article .col .question {
+  position: relative;
+  padding-left: 40px;
+  line-height: 20px;
+}
+.archive .faq .posts article .col .question::before {
+  content: "Q.";
+  position: absolute;
+  left: 20px;
+}
+.archive .faq .posts article .col .answer {
+  position: relative;
+  overflow: hidden;
+  max-height: 0;
+  padding-left: 60px;
+  line-height: 45px;
+  transition: all 0.6s ease;
+}
+.archive .faq .posts article .col .answer::before {
+  content: "A.";
+  position: absolute;
+  left: 20px;
+}
+.archive .faq .posts article .col .answer.open {
+  max-height: 200px;
+}
+.archive .faq .posts article .button {
+  position: relative;
+  width: 78px;
+}
+.archive .faq .posts article .button span {
+  position: absolute;
+
+  left: 20px;
+  top: 38px;
+  width: 27px;
+  display: block;
+  border-top: solid 2px black;
+}
+.archive .faq .posts article .button span::after {
+  content: "";
+  position: absolute;
+  width: 27px;
+  display: block;
+  border-top: solid 2px black;
+  top: -2px;
+  left: 0;
+  transition: all 0.3s ease;
+  transform: rotate( -90deg );
+}
+.archive .faq .posts article .button.open span::after {
+  transform: rotate( 0deg );
+}
+
+/* お問い合わせ */
+.archive .faq .contact .layoutOuter {
+  background-color: #eeeeee;
+  padding: 80px 0;
+}
+.archive .faq .contact .image img {
+  display: block;
+  width: 92px;
+  height: 65px;
+  margin: 0 auto;
+}
+.archive .faq .contact .description {
+  padding-top: 31px;
+  padding-bottom: 0;
+  line-height: 28px;
+  text-align: center;
+}
+
+.archive .faq .contact .button {
+  position: relative;
+  width: 240px;
+  margin: 0 auto;
+  margin-top: 29px;
+}
+.archive .faq .contact .button a {
+  display: block;
+  width: 240px;
+  height: 46px;
+  margin: 0 auto;
+  line-height: 46px;
+  border-radius: 23px;
+  background-color: black;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 700;
+  color: white;
+}
+.archive .faq .contact .button img {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 14px;
+  width: 6.161px;
+  height: 9.855px;
+  margin: auto;
+}
+
+/* ===================================================================================================================================================== */
+/*
+/* SPデザイン
+/*
+/* ===================================================================================================================================================== */
+@media screen and (max-width:  900px) {
+  /* ================================================== */
+  /* アーカイブ：よくある質問(.archive .faq)
+  /* ================================================== */
+  .archive .faq > .title{
+    font-size: 30px;
+    padding-top: 40px;
+  }
+  .archive .faq > .description {
+    font-size: 16px;
+    padding-top: 13px;
+    padding-bottom: 44px;
+    border: none; 
+  }
+  .archive .faq .categories .content {
+    padding-top: 52px;
+    width: 315px;
+  }
+  .archive .faq .categories .content li a {
+    height: 30px;
+    line-height: 30px;
+    margin: 0 6px;
+    margin-bottom: 6px;
+    padding: 0 16px;
+    border-radius: 6px;
+    border: solid 1.2px #cbcbcb;
+  }
+  .archive .faq .posts {
+    padding: 0 7.7vw;
+    padding-bottom: 10px;
+  }
+  .archive .faq .posts h2 {
+    padding-top: 33px;
+    padding-bottom: 20px;
+    font-size: 23px;
+  }
+  .archive .faq .posts article .col {
+    width: calc(100% - 54px);
+    padding-top: 25px;
+    padding-bottom: 29px;
+  }
+  .archive .faq .posts article .col .question {
+    padding-left: 20px;
+    font-size: 16px;
+    line-height: 26.6px;
+    font-weight: 400;
+  }
+  .archive .faq .posts article .col .question::before {
+    left: 0;
+  }
+  .archive .faq .posts article .button {
+    width: 54px;
+  }
+  .archive .faq .posts article .button span {
+    right: 2px;
+    left: auto;
+  }
+  .archive .faq .posts article .col .answer {
+    line-height: 27px;
+    padding-left: 20px;
+  }
+  .archive .faq .posts article .col .answer::before {
+    left: 0;
+  }
+  .archive .faq .contact .layoutOuter {
+    padding-top: 105px;
+    padding-bottom: 103px;
+  }
+  .archive .faq .contact .image img {
+    width: 120px;
+    height: 85px;
+  }
+  .archive .faq .contact .description {
+    font-size: 18px;
+    line-height: 1.7em;
+    font-weight: 400;
+    padding-top: 37px;
+    padding-bottom: 0;
+  }
+  .archive .faq .contact .button {
+    margin-top: 34px;
+    width: 312px;
+  }
+  .archive .faq .contact .button a {
+    width: 312px;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 30px;
+    font-size: 20px;
+  }
+  .archive .faq .contact .button img {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 18px;
+    width: 8px;
+    height: 12.812px;
+    margin: auto;
+  }
+}
+@media screen and (max-width:  900px) and (-webkit-min-device-pixel-ratio: 2) {
+}
+@media screen and (max-width:  900px) and (-webkit-min-device-pixel-ratio: 3) {
+}
+  
+  
+  
+  
+  
+  

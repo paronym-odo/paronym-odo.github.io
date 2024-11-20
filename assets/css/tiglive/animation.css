@@ -1,0 +1,42 @@
+/* foundation/animation
+ ========================================== */
+.sa {
+  opacity: 0;
+  transition: all 0.6s ease;
+}
+.sa.is-show {
+  opacity: 1;
+  transform: none;
+}
+
+.sa--lr {
+  transform: translate(-60px, 0);
+}
+
+.sa--rl {
+  transform: translate(60px, 0);
+}
+
+.sa--up {
+  transform: translate(0, 60px);
+}
+
+.sa--down {
+  transform: translate(0, -60px);
+}
+
+.sa--scaleUp {
+  transform: scale(0.5);
+}
+
+.sa--scaleDown {
+  transform: scale(1.5);
+}
+
+.sa--rotateL {
+  transform: rotate(180deg);
+}
+
+.sa--rotateR {
+  transform: rotate(-180deg);
+}

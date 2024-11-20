@@ -1,0 +1,502 @@
+@charset "UTF-8";
+
+/* ================================================== */
+/* アーカイブ：事例紹介(.archive .news)
+/* ================================================== */
+/* ヘッダー部 */
+.archive .news > .title {
+  padding-top: 50px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 35px;
+}
+.archive .news > .description {
+  padding-top: 16px;
+  padding-bottom: 48px;
+  border-bottom: solid 1px #cccccc;
+  font-size: 20px;
+  line-height: 20px;
+  text-align: center;
+}
+
+/* 投稿一覧 */
+.archive .news .posts {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 1090px;
+  padding-top: 80px;
+  margin: 0 auto;
+}
+.archive .news .posts a {
+  text-decoration: none;
+  color: black;
+}
+.archive .news .posts article {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+  max-width: 510px;
+  padding-bottom: 100px;
+}
+.archive .news .posts article .image {
+  height: 270px;
+  overflow: hidden;
+}
+.archive .news .posts article .image img {
+  width: 100%;
+}
+.archive .news .posts article .title {
+  padding-top: 26px;
+  padding-bottom: 26px;
+  width: 100%;
+  height: initial;
+  border-bottom: solid 1px #333333;
+  text-align: center;
+  line-height: 25px;
+  font-size: 16px;
+  font-weight: 500;
+  flex: 1;
+}
+.archive .news .posts article .footer {
+  display: flex;
+  height: 36px;
+}
+.archive .news .posts article .footer .category {
+  width: 50%;
+  height: 36px;
+  text-align: left;
+  line-height: 36px;
+  font-size: 14px;
+  font-weight: 400;
+}
+.archive .news .posts article .footer .information {
+  width: 50%;
+  height: 36px;
+  text-align: right;
+  line-height: 36px;
+  font-size: 14px;
+  font-weight: 400;
+}
+/* ページネーション */
+.archive .news .pagenations {
+  padding-bottom: 170px;
+}
+.archive .news .pagenations ul {
+  padding: 0;
+  text-align: center;
+  list-style: none;
+}
+.archive .news .pagenations ul li {
+  display: inline-block;
+  line-height: 20px;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 0 10px;
+}
+.archive .news .pagenations ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+/*----------------------------------------*/
+/* パーツ：newsフッター(.blog-footer)     */
+/*----------------------------------------*/
+.blog-footer {
+  display: flex;
+  display: -webkit-flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 1056px;
+  margin: 0 auto;
+  padding-bottom: 120px;
+}
+.blog-footer h2 {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 50px;
+  margin: 0;
+  margin-bottom: 14px;
+  padding: 0;
+  border: solid 1px #b6b6b6;
+  text-align: center;
+  text-transform: none;
+  letter-spacing: 0.025em;
+}
+/* カレンダー表示 */
+.blog-footer #text-2 {
+  width: 100%;
+  max-width: 480px;
+}
+.blog-footer #text-2 .damz_archive_calender {
+  display: flex;
+  display: -webkit-flex;
+  justify-content: space-between;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+}
+.blog-footer #text-2 .damz_archive_calender .year{
+  width: 229px;
+  border: solid 1px #cccccc;
+  padding: 9px;
+  padding-bottom: 3px;
+}
+.blog-footer #text-2 .damz_archive_calender .year .year_title {
+  width: 48px;
+  height: 48px;
+  line-height: 48px;
+  margin-bottom: 6px;
+  background-color: #eeeeee;
+  text-align: center;
+  font-family: "Noto Sans Japanese", serif;
+  font-size: 12px;
+  color: #7b802e;
+}
+#news .blog-footer #text-2 .damz_archive_calender .year .year_title {
+  color: #a08000;
+}
+#nws .blog-footer #text-2 .damz_archive_calender .year .year_title {
+  color: #7b802e;
+}
+.blog-footer #text-2 .damz_archive_calender .year > ul {
+  display: flex;
+  display: -webkit-flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.blog-footer #text-2 .damz_archive_calender .year > ul .month {
+  width: 48px;
+  height: 48px;
+  line-height: 48px;
+  margin-bottom: 6px;
+  padding: 0;
+  background-color: #e7e7e7;
+  text-align: center;
+  font-size: 12px;
+  color: #666666;
+}
+.blog-footer #text-2 .damz_archive_calender .year > ul .month a {
+  display: block;
+  text-decoration: none;
+  background-color: #333333;
+  color: white;
+}
+/* タグ一覧 */
+.blog-footer #text-3 {
+  width: 100%;
+  max-width: 270px;
+}
+.blog-footer #text-3 .damz_archive_tag {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+}
+.blog-footer #text-3 .damz_archive_tag li a {
+  display: block;
+  margin-bottom: 12px;
+  padding: 0 25px;
+  border: solid 1px #cccccc;
+  border-radius: 5px;
+  text-decoration: none;
+  line-height: 20px;
+  font-size: 12px;
+  color: #666666;
+}
+
+
+/* カテゴリ一覧 */
+.blog-footer #text-4 {
+  width: 100%;
+  max-width: 270px;
+}
+.blog-footer #text-4 .damz_archive_category {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+}
+.blog-footer #text-4 .damz_archive_category li a {
+  display: block;
+  margin-bottom: 12px;
+  padding: 0 25px;
+  border: solid 1px #cccccc;
+  border-radius: 5px;
+  text-decoration: none;
+  line-height: 20px;
+  font-size: 12px;
+  color: #666666;
+}
+
+
+
+/*
+.blog-footer #tag_cloud-2 {
+  width: 270px;
+}
+.blog-footer #tag_cloud-2 .tagcloud {
+  display: flex;
+  display: -webkit-flex;
+  flex-wrap: wrap;
+}
+.blog-footer #tag_cloud-2 .tagcloud::after{
+  content:"";
+  display: block;
+  width:30%;
+}
+.blog-footer #tag_cloud-2 .tagcloud li {
+  width: 82px;
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  text-align: center;
+}
+.blog-footer #tag_cloud-2 .tagcloud a {
+  display: block;
+  height: 20px;
+  line-height: 20px;
+  margin: 0;
+  margin-right: 13px;
+  margin-bottom: 13px;
+  padding: 0 27px;
+  border: none;
+  background-color: #e7e7e7;
+  text-decoration: none;
+  font-family: "Noto Sans Japanese", serif;
+  font-size: 12px !important;
+  color: #666666;
+}
+.blog-footer #tag_cloud-2 .tagcloud a:hover {
+    box-shadow: inset 0 0 0 rgba(0, 0, 0, 0), 0 1px 0 rgba(0, 0, 0, 1);
+}
+.blog-footer #text-3 {
+    width: 270px;
+}
+.blog-footer #text-3 ul {
+    display: flex;
+    display: -webkit-flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+.blog-footer #text-3 ul::after{
+      content:"";
+      display: block;
+      width:30%;
+}
+.blog-footer #text-3 ul li {
+    line-height: 20px;
+    margin: 0;
+    margin-right: 13px;
+    margin-bottom: 13px;
+    padding: 0;
+    border: none;
+    background-color: #f4f4f4;
+    font-size: 12px;
+    text-align: center;
+}
+.blog-footer #text-3 ul li a {
+  display: block;
+  font-family: "Noto Sans Japanese", serif;
+  color: #666666;
+  padding: 0 27px;
+  height: 20px;
+  line-height: 20px;
+  background-color: #e7e7e7;
+  text-decoration: none;
+  font-size: 12px !important;
+}
+.blog-footer #text-3 ul li a:hover {
+    box-shadow: inset 0 0 0 rgba(0, 0, 0, 0), 0 1px 0 rgba(0, 0, 0, 1);
+}
+*/
+/* お問い合わせ */
+.archive .news .contact .layoutOuter {
+  background-color: #eeeeee;
+  padding: 80px 0;
+}
+.archive .news .contact .image img {
+  display: block;
+  width: 92px;
+  height: 65px;
+  margin: 0 auto;
+}
+.archive .news .contact .description {
+  padding-top: 31px;
+  padding-bottom: 0;
+  line-height: 28px;
+  text-align: center;
+}
+
+.archive .news .contact .button {
+  position: relative;
+  width: 240px;
+  margin: 0 auto;
+  margin-top: 29px;
+}
+.archive .news .contact .button a {
+  display: block;
+  width: 240px;
+  height: 46px;
+  margin: 0 auto;
+  line-height: 46px;
+  border-radius: 23px;
+  background-color: black;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 700;
+  color: white;
+}
+.archive .news .contact .button img {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 14px;
+  width: 6.161px;
+  height: 9.855px;
+  margin: auto;
+}
+
+/* ===================================================================================================================================================== */
+/*
+/* SPデザイン
+/*
+/* ===================================================================================================================================================== */
+@media screen and (max-width:  900px) { 
+  /* ================================================== */
+  /* アーカイブ：事例紹介(.archive .news)
+  /* ================================================== */
+  /* タイトル */
+  .archive .news > .title {
+    padding-top: 42px;
+    font-size: 30px;
+  }
+  .archive .news > .description {
+    font-size: 16px;
+    padding-top: 13px;
+    padding-bottom: 44px;
+    border: none;
+  }
+  /* 記事一覧(.posts) */
+  .archive .news .posts {
+    padding-top: 5px;
+  }
+  .archive .news .posts a {
+    width: 100%;
+    max-width: 314px;
+    margin: 0 auto;
+  }
+  .archive .news .posts article {
+    padding-bottom: 60px;
+  }
+  .archive .news .posts article .title {
+    height: auto;
+    padding-top: 5px;
+    padding-bottom: 7px;
+    line-height: 32px;
+    font-size: 18px;
+  }
+  .archive .news .posts article .category {
+    width: 100%;
+    padding-top: 9px;
+    line-height: 27px;
+    font-size: 12px;
+  }
+  .archive .news .posts article .information {
+    width: 100%;
+    line-height: 10px;
+    text-align: left;
+    font-size: 12px;
+  }
+  /* ページネーション(.pagenations) */
+  .archive .news .pagenations {
+    padding-bottom: 30px;
+  }
+  .archive .news .pagenations ul li {
+    font-size: 18px;
+  }
+  
+  /* ブログフッター(.blog-footer) */
+  .blog-footer {
+    padding: 0 4.1vw 20px;
+  }
+  .blog-footer #text-2,
+  .blog-footer #text-3,
+  .blog-footer #text-4 {
+    width: 100%;
+    max-width: initial;
+    margin: 0 auto;
+  }
+  .blog-footer h2 {
+    height: 58px;
+    line-height: 58px;
+    font-size: 20px;
+  }
+  .blog-footer #text-2 .damz_archive_calender {
+    padding-bottom: 34px;
+  }
+  .blog-footer #text-2 .damz_archive_calender .year{
+    width: 100%;
+    max-width: 345px;
+    margin-bottom: 13px;
+    padding: 10px;
+    padding-bottom: 7px;
+  }
+  .blog-footer #text-2 .damz_archive_calender .year .year_title {
+    /*width: 65px;*/
+    width: 100%;
+    height: 65px;
+    line-height: 65px;
+    margin-bottom: 8px;
+    font-size: 16px;
+    color: #333333;
+  }
+  .blog-footer #text-2 .damz_archive_calender .year > ul .month {
+    max-width: 65px;
+    width: calc(50% - 4px);
+    height: 65px;
+    line-height: 65px;
+    margin-bottom: 8px;
+    font-size: 16px;
+  }
+  .blog-footer #text-3 .damz_archive_tag {
+    margin-top: 13px;
+    margin-bottom: 21px;
+  }
+  .blog-footer #text-3 .damz_archive_tag li a {
+    padding: 0 24px;
+    font-size: 16px;
+    line-height: 28px;
+    border-radius: 6px;
+    border: solid 1px #cbcbcb;
+  }
+  .blog-footer #text-4 .damz_archive_category li a {
+    padding: 0 24px;
+    font-size: 16px;
+    line-height: 28px;
+    border-radius: 6px;
+    border: solid 1px #cbcbcb;
+  }
+}
+@media screen and (max-width:  900px) and (-webkit-min-device-pixel-ratio: 2) {
+}
+@media screen and (max-width:  900px) and (-webkit-min-device-pixel-ratio: 3) {
+}
+  
+  
+  
+  
+  
+  

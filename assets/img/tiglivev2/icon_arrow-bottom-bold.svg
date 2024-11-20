@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="icon_arrow-bottom-bold" transform="translate(0 24) rotate(-90)">
+    <g id="iconguide">
+      <g id="グループ_2285" data-name="グループ 2285" opacity="0.4">
+        <rect id="長方形_911" data-name="長方形 911" width="24" height="24" fill="none"/>
+        <circle id="楕円形_8" data-name="楕円形 8" cx="9.637" cy="9.637" r="9.637" transform="translate(2.268 2.268)" fill="none"/>
+        <rect id="長方形_912" data-name="長方形 912" width="13.605" height="13.605" transform="translate(5.102 5.102)" fill="none"/>
+        <rect id="長方形_913" data-name="長方形 913" width="15.873" height="11.338" transform="translate(3.968 6.236)" fill="none"/>
+        <rect id="長方形_914" data-name="長方形 914" width="11.338" height="15.873" transform="translate(6.236 3.968)" fill="none"/>
+        <line id="線_493" data-name="線 493" x2="23.809" transform="translate(0 10.989)" fill="none"/>
+        <line id="線_494" data-name="線 494" y2="23.809" transform="translate(10.989)" fill="none"/>
+        <line id="線_495" data-name="線 495" x2="24" y2="24" fill="none"/>
+        <line id="線_496" data-name="線 496" x1="24" y2="24" fill="none"/>
+      </g>
+    </g>
+    <path id="合体_115" data-name="合体 115" d="M7.268,9.507.464,2.7a1.582,1.582,0,0,1,0-2.241A1.582,1.582,0,0,1,2.7.464L8.387,6.146,14.07.464a1.583,1.583,0,0,1,2.7,1.12A1.572,1.572,0,0,1,16.311,2.7l-6.8,6.805a1.586,1.586,0,0,1-2.239,0Z" transform="translate(3.518 6.92)" fill="#000"/>
+  </g>
+</svg>

@@ -1,0 +1,612 @@
+/* component
+ ========================================== */
+ /* component/text
+ ---------------------------- */
+.c-text {
+  font-family: "Noto Sans JP", "Helvetica Neue", "Helvetica", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Arial", "Yu Gothic", "Meiryo", sans-serif;
+}
+.c-text.-strong {
+  font-weight: 700;
+}
+.c-text.-attention {
+  color: #D63737;
+}
+.c-text.-italic {
+  color: #C3358B;
+}
+.c-text.-align_left {
+  text-align: left;
+}
+.c-text.-align_center {
+  text-align: center;
+}
+.c-text.-align_right {
+  text-align: right;
+}
+
+.c-textCatch {
+  font-size: 1.5rem;
+  line-height: 2;
+  letter-spacing: 0.125em;
+  text-align: center;
+}
+
+/* Wordpress用 */
+.entry-header {
+  display: none;
+}
+.entry-content {
+  padding: 0 0 !important;
+}
+@media screen and (max-width: 900px){
+  .page .entry-content {
+    padding: 0 0 !important;
+  }
+}
+
+  @media screen and (max-width: 575px) {
+    .c-textCatch {
+      font-size: 1.25rem;
+      line-height: 2;
+    }
+  }
+
+.tig-iframe-area{
+  height: 0;
+}
+
+.tig-movie-thumbnail{
+  display: none;
+}
+
+/* component/background
+---------------------------- */
+.c-bgcolor.-main {
+  background-color: #FFFFFF;
+}
+.c-bgcolor.-sub {
+  background-color: #FBFBFC;
+}
+
+/* component/block
+---------------------------- */
+.c-block {
+  position: relative;
+  overflow: hidden;
+  width: 88%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* component/overflow
+---------------------------- */
+.c-overflow {
+  overflow-x: hidden;
+}
+
+/* component/flex
+---------------------------- */
+.c-flex {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.c-flex__item {
+  box-sizing: border-box;
+}
+  @media screen and (max-width: 767px) {
+    .c-flex__item {
+      margin: 0 auto;
+      width: 100%;
+    }
+    .c-flex__item img {
+      width: 100%;
+    }
+  }
+
+/* component/heading
+---------------------------- */
+.c-secHead{
+  padding-bottom: 2.0rem;
+  background: url(../../img/tiglive/download_bg.png) no-repeat 0% 60%;
+  background-size: cover;
+}
+
+.c-heading {
+  padding-top: 12.0rem;
+  padding-bottom: 6.0rem;
+  font-size: 1.125rem;
+  line-height: 1;
+  font-weight: 500;
+  text-align: center;
+}
+.c-heading h2.c-block{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+  @media screen and (max-width: 767px) {
+    .c-heading h2.c-block{
+      flex-direction: column;
+    }
+  }
+
+.c-heading h2.c-block.-center{
+  display: block;
+}
+
+.c-heading .ttl_primary {
+  display: inline-block;
+  position: relative;
+  margin-left: 3.2rem;
+  font-family: "itc-avant-garde-gothic-pro", sans-serif;
+  color: #24245e;
+}
+  @media screen and (max-width: 767px) {
+    .c-heading .ttl_primary {
+      margin-left: 0;
+      margin-bottom: 0.8rem;
+    }
+  }
+
+.c-heading .ttl_primary::before,
+.c-heading .ttl_primary::after{
+  display: block;
+  position: absolute;
+  color: #E9ECF0;
+}
+.c-heading .ttl_primary::before{
+  left: -3.2rem;
+  content: '“';
+}
+
+.c-heading .ttl_primary::after{
+  top: 0;
+  right: -3.8rem;
+  content: '”';
+}
+
+.c-heading .ttl_secondary {
+  display: block;
+  margin-left: 3.8rem;
+  color: #3AC0C4;
+  font-size: 1.8rem;
+  line-height: 1;
+}
+  @media screen and (max-width: 767px) {
+    .c-heading .ttl_secondary {
+      margin-left: 0;
+    }
+  }
+
+.c-heading.-sec {
+  color: #FFF;
+  padding-top: 18.0rem;
+  padding-bottom: 6.0rem;
+}
+
+.c-heading.-sec .ttl_secondary{
+ color: #E9ECF0;
+}
+
+/* component/btn
+---------------------------- */
+.c-btn {
+  position: relative;
+  display: inline-block;
+  margin: 3.35em auto 0;
+  padding: 2.0rem 5.2rem 2.0rem 2.0em;
+  background: transparent linear-gradient(270deg, #A940C9 0%, #D12F91 100%);
+  border-radius: 4.5rem;
+  cursor: pointer;
+  color: #fff;
+  font-size: 1.8rem;
+  line-height: 1.6;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none!important;
+}
+.c-btn::after{
+  display: block;
+  position: absolute;
+  top: calc(50% - 0.53rem);
+  right: 2rem;
+  content: "";
+  width: 1.06rem;
+  height: 0.987rem;
+  background:url(../../img/tiglive/icon_arrow.png) no-repeat 0% 50%;
+  background-size: cover;
+}
+
+.c-btn.-border {
+  padding: 2.0rem 2.8rem 2.0rem 4.8rem;
+  color: #C3358B;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #C3358B;
+  background: #FDFDFD;
+}
+
+.c-btn.-border::after {
+  display: block;
+  position: absolute;
+  top: calc(50% - 0.53rem);
+  left: 2rem;
+  content: "";
+  width: 1.06rem;
+  height: 0.987rem;
+  transform:rotate(180deg);
+  background: url(../../img/tiglive/icon_arrow-c.png) no-repeat 0% 50%;
+  background-size: cover;
+}
+.c-btn:hover{
+  opacity: 0.5;
+  transition: 0.2s;
+}
+
+  @media screen and (max-width: 767px) {
+    .c-btn {
+      font-size: 1.6rem;
+    }
+  }
+
+/* component/pagetop
+---------------------------- */
+.c-pagetop {
+  overflow: hidden;
+  position: relative;
+  background-color: #E9ECF0;
+  text-align: center;
+}
+.c-pagetop a {
+  display: block;
+  padding: 20px 0;
+  text-indent: -9999pt;
+}
+.c-pagetop a::after {
+  display: block;
+  content: "";
+  position: absolute;
+  top: calc(50% - 4px);
+  left: calc(50% - 9px);
+  width: 20px;
+  height: 20px;
+  margin: 0 auto;
+  border-width: 2px;
+  border-style: solid;
+  border-color: transparent;
+  border-bottom-color: #C3358B;
+  border-left-color: #C3358B;
+  transform: rotate(135deg);
+}
+
+/* component/form
+---------------------------- */
+.c-requiredLabel {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 20px;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #C3358B;
+}
+
+.c-form input[type=text], .c-form input[type=email] {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  background-image: none;
+  border: 1px solid #E9ECF0;
+  border-radius: 5px;
+  color: inherit;
+  font-family: inherit;
+  font-size: 1em;
+  padding: 0.4em 0.8em;
+  width: 100%;
+}
+.c-form input[type=text]:focus, .c-form input[type=email]:focus {
+  border: 1px solid #E9ECF0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  outline: none;
+}
+.c-form textarea {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  background-image: none;
+  border: 1px solid #E9ECF0;
+  border-radius: 5px;
+  color: inherit;
+  font-family: inherit;
+  font-size: 1em;
+  height: 300px;
+  padding: 0.4em 0.8em;
+  width: 100%;
+}
+.c-form textarea:focus {
+  border: 1px solid #E9ECF0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  outline: none;
+}
+.c-form button {
+  display: block;
+  margin: 0 auto 1em;
+  padding: 2.0rem 5.2rem 2.0rem 2.0em;
+  border-radius: 32px;
+  color: #fff;
+  font-size: 1em;
+  text-decoration: none;
+  background: transparent linear-gradient(270deg, #A940C9 0%, #D12F91 100%);
+  cursor: pointer;
+}
+.c-form button:hover, .c-form button:focus {
+  outline: none;
+}
+.c-form button::-moz-foucus-inner {
+  border: none;
+  padding: 0;
+}
+.c-form__list {
+  width: 100%;
+  max-width: 760px;
+  margin: 0 auto;
+}
+  @media screen and (max-width: 767px) {
+    .c-form__list {
+      width: 100%;
+    }
+  }
+.c-form__item {
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+.error{
+  color: #D63737;
+  text-align: left;
+}
+
+.c-form__item__block:not(:first-child) {
+  margin-left: 0;
+  margin-top: 1.2rem;
+}
+
+.c-form__label {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 1.6rem;
+}
+
+.c-form__radioInput {
+  display: none;
+}
+
+.c-form__radioInput + label {
+  position: relative;
+  padding-left: 28px;
+  margin-right: 32px;
+}
+
+.c-form__radioInput + label::before {
+  display: block;
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #E9ECF0;
+  border-radius: 50%;
+}
+.c-form__radioInput:checked + label {
+  color: #C3358B;
+}
+
+.c-form__radioInput:checked + label::after {
+  display: block;
+  content: "";
+  position: absolute;
+  top: 7px;
+  left: 3px;
+  width: 14px;
+  height: 14px;
+  background: #C3358B;
+  border-radius: 50%;
+}
+
+.c-form__checkboxInput,
+.mwform-checkbox-field label input {
+  display: none;
+}
+
+.c-form__checkboxInput:checked + .c-form__checkboxParts,
+.mwform-checkbox-field label input:checked + .mwform-checkbox-field-text {
+  color: #C3358B;
+}
+
+.c-form__checkboxInput:checked + .c-form__checkboxParts::after,
+.mwform-checkbox-field label input:checked + .mwform-checkbox-field-text::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 11px;
+  left: 6px;
+  width: 11px;
+  height: 16px;
+  transform: rotate(40deg);
+  border-bottom: 3px solid #C3358B;
+  border-right: 3px solid #C3358B;
+}
+
+.c-form__checkboxParts,
+.mwform-checkbox-field-text {
+  display: inline-block;
+  position: relative;
+  padding: 8px 0 8px 36px;
+  margin-right: 32px;
+}
+
+.c-form__checkboxParts::before,
+.mwform-checkbox-field-text::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 10px;
+  left: 0;
+  width: 24px;
+  height: 24px;
+  border: 1px solid #E9ECF0;
+  border-radius: 3px;
+}
+
+.c-form__agreeArea {
+  text-align: left;
+}
+
+.c-form__agreeArea a {
+  text-decoration: underline;
+}
+
+.c-form__agreeArea > *:not(:first-child) {
+  margin-top: 20px;
+}
+
+.c-form__agreeArea label {
+  display: block;
+  margin-top: 32px;
+}
+
+.c-form__agreeArea__box {
+  overflow-x: hidden;
+  overflow-y: scroll;
+  padding: 16px;
+  height: 120px;
+  border: 1px solid #E9ECF0;
+  border-radius: 5px;
+}
+  @media screen and (max-width: 767px) {
+    .c-form__agreeArea__box {
+      height: 200px;
+    }
+  }
+
+.c-form hr {
+  margin-bottom: 20px;
+  width: 88%;
+  height: 1px;
+  border: none;
+  background-color: #E9ECF0;
+}
+  @media screen and (max-width: 767px) {
+    .c-form hr {
+      width: 100%;
+    }
+  }
+
+
+/*==================================================
+slider
+===================================*/
+.c-slider__slick-logo img {
+    width: 100%;
+    height: auto;
+}
+.c-slider__slick-logo .slick-track{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.c-slider__slick-logo .slick-slide {
+    margin:0 2.0rem;
+}
+
+/* 戻る、次へ矢印の位置
+---------------------------- */
+.c-slider__slick--prev,
+.c-slider__slick--next {
+    position: absolute;
+    top: 42%;
+    cursor: pointer;
+    outline: none;
+    background: #aaa;
+    /* background: transparent -webkit-linear-gradient(right, #A940C9 0%, #D12F91 100%);
+    background: transparent -o-linear-gradient(right, #A940C9 0%, #D12F91 100%);
+    background: transparent linear-gradient(to left, #A940C9 0%, #D12F91 100%); */
+    padding:1.6rem;
+    border-radius: 50%;
+    opacity: .7;
+}
+
+.c-slider__slick--prev {
+  z-index: 1;
+  left: -1.6rem;
+}
+
+.c-slider__slick--next {
+  z-index: 1;
+  right: -1.6rem;
+}
+  @media screen and (max-width: 767px) {
+    .c-slider__slick--prev {
+      left: -0.8rem;
+    }
+
+    .c-slider__slick--next {
+      right: -0.8rem;
+    }
+  }
+
+.c-slider__slick--prev::before,
+.c-slider__slick--next::before {
+  position: relative;
+  display: block;
+  content: "";
+  border-top: 2px solid #fff;
+  border-right: 2px solid #fff;
+  height: 8px;
+  width: 8px;
+}
+.c-slider__slick--prev::before{
+  left: 2px;
+  transform: rotate(-135deg);
+}
+.c-slider__slick--next::before {
+  right: 2px;
+  transform: rotate(45deg);
+}
+
+/* ドットナビゲーションの設定
+---------------------------- */
+.slick-dots {
+  text-align:center;
+  margin:20px 0 0 0;
+}
+
+.slick-dots li {
+    display:inline-block;
+margin:0 5px;
+}
+
+.slick-dots button {
+    color: transparent;
+    outline: none;
+    width:0.4rem;
+    height:0.4rem;
+    display:block;
+    border-radius:4px;
+    background:#ccc;
+}
+
+.slick-dots .slick-active button{
+    background:#333;
+}

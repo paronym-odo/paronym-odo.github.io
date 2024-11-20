@@ -1,0 +1,13 @@
+.page .entry-content #mw_wp_form_mw-wp-form-74.mw_wp_form_input .input.input_others {
+	display: block;
+}
+.page .entry-content #mw_wp_form_mw-wp-form-74.mw_wp_form_input .input_others .inquiry_type {
+	margin-bottom: 1rem;
+}
+.page .entry-content #mw_wp_form_mw-wp-form-74.mw_wp_form_input .input_others input[type=radio] {
+    -webkit-appearance: radio;
+    display: inline;
+    width: initial;
+    margin: 0 10px 0px;
+    height: inherit;
+}

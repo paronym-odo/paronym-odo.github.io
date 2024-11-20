@@ -1,0 +1,190 @@
+/* base
+========================================== */
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, dialog, figure, footer, header,
+hgroup, menu, nav, section,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  vertical-align: bottom;
+}
+
+button,
+[type=submit],
+[type=button] {
+  border: none;
+  outline: none;
+  background: none;
+}
+
+[type=submit],
+[type=reset],
+[type=button] {
+  -webkit-box-sizing: content-box;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+  -webkit-appearance: button;
+  appearance: button;
+}
+
+[type=submit]::-webkit-search-decoration,
+[type=reset]::-webkit-search-decoration,
+[type=button]::-webkit-search-decoration {
+  display: none;
+}
+
+[type=submit]::focus,
+[type=reset]::focus,
+[type=button]::focus {
+  outline-offset: -2px;
+}
+
+
+/* --base--common
+ ========================================== */
+html {
+  position: relative;
+}
+
+body {
+  min-width: 300px;
+  max-width: 100%;
+  color: #000000;
+  font-family: "Noto Sans JP", "Helvetica Neue", "Helvetica", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Arial", "Yu Gothic", "Meiryo", sans-serif;
+  background-color: #FFF;
+  font-weight: 400;
+}
+
+main{
+  /* padding-top: 71.4rem; */
+}
+
+.wrapper {
+  overflow-x: hidden;
+}
+
+input[type=checkbox],
+select,
+button,
+a {
+  cursor: pointer;
+}
+
+a:hover {
+  opacity: 0.5;
+  transition: 0.2s;
+}
+
+small {
+  font-size: inherit;
+}
+
+label,
+.txtbtn {
+  font-size: 1.8rem;
+}
+
+small {
+  font-size: 0.75rem;
+}
+
+img {
+  max-width: 100%;
+}
+
+
+/* --base--font
+ ========================================== */
+* {
+  letter-spacing: 0.1em;
+}
+html{
+  font-size: 62.5%;
+}
+  @media screen and (max-width: 991px) {
+    html {
+      font-size: 59.29%;
+    }
+  }
+  @media screen and (max-width: 767px) {
+    html {
+      font-size: 56.08%;
+    }
+  }
+  @media screen and (max-width: 575px) {
+    html {
+      font-size: 52.87%;
+    }
+  }
+  @media screen and (max-width: 374px) {
+    html {
+      font-size: 49.66%;
+    }
+  }
+
+body {
+  font-size: 1.6rem;
+  line-height: 1.8;
+  letter-spacing: 0.1em;
+  font-weight: 400;
+}
+
+h1{
+  padding-top: 3rem;
+  font-size: 7.2rem;
+  line-height: 1.4;
+  letter-spacing: 0.052em;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 5.2rem;
+  line-height: 1.2;
+  letter-spacing: 0.1em;
+  font-weight: 700;
+  text-align: center;
+}
+
+h3 {
+  font-size: 2.7rem;
+  line-height: 1.8;
+  letter-spacing: 0.1em;
+  font-weight: 700;
+}
+
+h4 {
+  font-size: 2.0rem;
+  line-height: 1.8;
+  letter-spacing: 0.1em;
+  font-weight: 700;
+}
+
+p {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  letter-spacing: 0.1em;
+  font-weight: 400;
+}

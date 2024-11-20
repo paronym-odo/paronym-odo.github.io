@@ -1,0 +1,142 @@
+@charset "UTF-8";
+
+/* ================================================== */
+/* アーカイブ：ブログ(.single .blog-page)
+/* ================================================== */
+.single .blog-page .head-image {
+  margin: 30px auto 0;
+  width: 100%;
+  max-width: 1200px;
+}
+.single .blog-page .head-image img {
+  width: 100%;
+}
+.single .blog-page > .title {
+  padding-top: 110px;
+  line-height: 35px;
+  font-size: 25px;
+  font-weight: 700;
+  text-align: center;
+}
+.single .blog-page .date {
+  padding-top: 17px;
+  padding-bottom: 48px;
+  line-height: 16px;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+}
+.single .blog-page .content {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding-bottom: 118px;
+  line-height: 24px;
+  font-size: 14px;
+  font-weight: 400;
+}
+.single .blog-page .last-block {
+  margin-top: 80px;
+  padding: 50px 60px;
+  border: 1px solid #b6b6b6;
+}
+.single .blog-page .content .last-block h2{
+  padding-top: 0;
+}
+.single .blog-page .content .last-block img{
+  padding-bottom: 0;
+}
+.single .blog-page .blog-footer {
+  padding-bottom: 110px;
+}
+.single .blog-page .request .title {
+  padding-top: 72px;
+}
+.single .blog-page .request {
+  border-top: solid 1px #eeeeee;
+  border-bottom: solid 1px #eeeeee;
+}
+/* ===================================================================================================================================================== */
+/*
+/* SPデザイン
+/*
+/* ===================================================================================================================================================== */
+@media screen and (max-width:  900px) {
+  /* ================================================== */
+  /* アーカイブ：事例紹介(.single .blog-page)
+  /* ================================================== */
+  .single .blog-page .last-block {
+    margin-top: 41px;
+    padding: 25px 30px;
+    margin-bottom: 50px;
+  }
+  .single .blog-page .content .last-block h2{
+    padding-top: 0;
+  }
+  .single .blog-page > .title {
+    margin: 0 7.7vw;
+    padding-top: 41px;
+    font-size: 23px;
+    line-height: 30px;
+  }
+  .single .blog-page .date {
+    padding-top: 21px;
+    padding-bottom: 21px;
+  }
+  .single .blog-page .content {
+    padding: 0 7.7vw;
+    font-size: 16px;
+    line-height: 26px;
+  }
+  .single .blog-page .content img {
+    width: 100%;
+    height: auto;
+  }
+  .single .blog-page .blog-footer {
+    padding: 0 7.7vw 20px;
+  }
+  .single .blog-page .contact .layoutOuter {
+    padding-top: 105px;
+    padding-bottom: 103px;
+  }
+  .single .blog-page .contact .image img {
+    width: 120px;
+    height: 85px;
+  }
+  .single .blog-page .contact .description {
+    font-size: 18px;
+    line-height: 1.7em;
+    font-weight: 400;
+    padding-top: 37px;
+    padding-bottom: 0;
+  }
+  .single .blog-page .contact .button {
+    margin-top: 34px;
+    width: 312px;
+  }
+  .single .blog-page .contact .button a {
+    width: 312px;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 30px;
+    font-size: 20px;
+  }
+  .single .blog-page .contact .button img {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 18px;
+    width: 8px;
+    height: 12.812px;
+    margin: auto;
+  }
+}
+@media screen and (max-width:  900px) and (-webkit-min-device-pixel-ratio: 2) {
+}
+@media screen and (max-width:  900px) and (-webkit-min-device-pixel-ratio: 3) {
+}
+
+
+
+
+

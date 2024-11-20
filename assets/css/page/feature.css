@@ -1,0 +1,412 @@
+@charset "UTF-8";
+
+/* ================================================== */
+/* ページ：TIGの主な機能(.page-feature)
+/* ================================================== */
+.page-feature .posts a,
+.page-feature-en .posts a {
+  text-decoration: none;
+  color: #000;
+  padding: 1px;
+}
+.page-feature .posts,
+.page-feature-en .posts {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 1004px;
+  margin: 0 auto;
+  padding: 0;
+  padding-top: 81px;
+  padding-bottom: 60px;
+}
+.page-feature .posts,
+.page-feature-en .posts {
+  width: 100%;
+  max-width: 1004px;
+  margin: 0 auto;
+  padding: 0;
+  padding-top: 81px;
+  padding-bottom: 60px;
+}
+.page-feature .posts .slick-list,
+.page-feature-en .posts .slick-list {
+  width: 100%;
+  padding: 1px 0;
+}
+.page-feature .posts .slick-list .slick-track,
+.page-feature-en .posts .slick-list .slick-track {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.page-feature .posts li,
+.page-feature-en .posts li {
+  list-style: none;
+  width: 180px ;
+  margin: 0;
+  margin-bottom: 20px;
+  padding-top: 40px;
+  padding-bottom: 26px;
+  box-shadow: 0 0 4px rgba(0,0,0,0.1);
+}
+.page-feature .posts li .initial,
+.page-feature-en .posts li .initial {
+  padding-bottom: 13px;
+  text-align: center;
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 84px;
+  line-height: 70px;
+}
+.page-feature .posts li .title,
+.page-feature-en .posts li .title {
+  padding-bottom: 7px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+}
+.page-feature .design3,
+.page-feature-en .design3 {
+  padding-top: 96px;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#dbdbdb+0,ffffff+50,dbdbdb+100 */
+  background: #dbdbdb; /* Old browsers */
+  background: -moz-linear-gradient(left, #dbdbdb 0%, #ffffff 50%, #dbdbdb 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, #dbdbdb 0%,#ffffff 50%,#dbdbdb 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, #dbdbdb 0%,#ffffff 50%,#dbdbdb 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dbdbdb', endColorstr='#dbdbdb',GradientType=1 ); /* IE6-9 */
+}
+.page-feature .design3 article,
+.page-feature-en .design3 article {
+  position: relative;
+  width: 100%;
+  max-width: 1050px;
+  margin: 0 auto;
+}
+.page-feature .design3 article .initial,
+.page-feature-en .design3 article .initial {
+  position: absolute;
+  top: -75px;
+  left: 0;
+  z-index: 1;
+  display: inline-block;
+  text-shadow: 0 0 8px rgba(0,0,0,0.05);
+  text-align: center;
+  line-height: 1;
+  font-size: 440px;
+  font-weight: 900;
+  color: #dcdcdc;
+}
+.page-feature .design3 article:nth-child(even) .initial,
+.page-feature-en .design3 article:nth-child(even) .initial {
+  left: auto;
+  right: 0;
+}
+
+.page-feature .design3 article .title,
+.page-feature-en .design3 article .title {
+  position: relative;
+  z-index: 100;
+  padding-bottom: 11px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 35px;
+}
+.page-feature .design3 article .bar,
+.page-feature-en .design3 article .bar {
+  position: relative;
+  z-index: 100;
+  width: 100%;
+  max-width: 500px;
+  height: 2px;
+  margin: 0 auto;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,dddddd+50,ffffff+100&0+0,1+50,0+100 */
+  background: -moz-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(221,221,221,1) 50%, rgba(255,255,255,0) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%,rgba(221,221,221,1) 50%,rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, rgba(255,255,255,0) 0%,rgba(221,221,221,1) 50%,rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#00ffffff',GradientType=1 ); /* IE6-9 */
+}
+.page-feature .design3 article .description,
+.page-feature-en .design3 article .description {
+  position: relative;
+  z-index: 100;
+  margin: 0;
+  padding-top: 18px;
+  font-size: 20px;
+  font-weight: 500;
+}
+.page-feature .design3 article .content,
+.page-feature-en .design3 article .content {
+  position: relative;
+  z-index: 100;
+  padding-bottom: 115px;
+}
+.page-feature .design3 article .content ul,
+.page-feature-en .design3 article .content ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  padding-top: 40px;
+  list-style: none;
+}
+.page-feature .design3 article .content ul li,
+.page-feature-en .design3 article .content ul li {
+  margin: 0 40px;
+  width: 100%;
+  max-width: 270px;
+}
+.page-feature .design3 article .content ul li .title,
+.page-feature-en .design3 article .content ul li .title {
+  padding-top: 5px;
+  padding-bottom: 7px;
+  text-align: left;
+  font-size: 20px;
+  font-weight: 500;
+}
+.page-feature .design3 article .content ul li .text,
+.page-feature-en .design3 article .content ul li .text {
+  text-align: left;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 28px;
+}
+
+/*
+.page-feature .design1 article {
+  position: relative;
+}
+.page-feature .design1 article .initial {
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  display: inline-block;
+  text-shadow: 0 0 8px rgba(0,0,0,0.05);
+  text-align: center;
+  font-size: 440px;
+  font-weight: 900;
+  color: #e2e2e2;
+}
+.page-feature .design1 article .title {
+  position: relative;
+  z-index: 100;
+  font-weight: 700;
+  font-size: 24px;
+  text-align: center;
+  padding-bottom: 36px;
+}
+.page-feature .design1 article .content {
+  position: relative;
+  z-index: 100;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  font-size: 14px;
+  font-weight: 400;
+}
+.page-feature .design1 article .content ul {
+  margin: 0;
+}
+.page-feature .design1 article.design {
+  height: 790px;
+}
+.page-feature .design1 article.design .initial {
+  top: -197px;
+}
+.page-feature .design1 article.flexibility {
+  height: 670px;
+}
+.page-feature .design1 article.flexibility .initial {
+  top: -197px;
+}
+.page-feature .design2 article {
+  position: relative;
+  min-height: 800px;
+  padding-top: 31px;
+  background-color: #e0e0e0;
+}
+.page-feature .design2 article .bar {
+  width: 100%;
+  max-width: 800px;
+  height: 2px;
+  margin: 0 auto;
+    
+  background: #e0e0e0;
+  background: -moz-linear-gradient(left, #e0e0e0 0%, #ffffff 50%, #e0e0e0 100%); 
+  background: -webkit-linear-gradient(left, #e0e0e0 0%,#ffffff 50%,#e0e0e0 100%); 
+  background: linear-gradient(to right, #e0e0e0 0%,#ffffff 50%,#e0e0e0 100%); 
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e0e0e0', endColorstr='#e0e0e0',GradientType=1 ); 
+}
+.page-feature .design2 article .title {
+  position: relative;
+  z-index: 100;
+  font-weight: 700;
+  font-size: 24px;
+  text-align: center;
+  padding-top: 67px;
+  padding-bottom: 36px;
+}
+.page-feature .design2 article .content {
+  position: relative;
+  z-index: 100;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  font-size: 14px;
+  font-weight: 400;
+}
+.page-feature .design2 article .initial {
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  display: inline-block;
+  text-shadow: 0 0 8px rgba(0,0,0,0.1);
+  text-align: center;
+  font-size: 440px;
+  font-weight: 900;
+  color: #dedede;
+}
+.page-feature .design2 article .images {
+  position: relative;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding-top: 100px;
+}
+.page-feature .design2 article.technology .initial {
+  top: -94px;
+}
+
+.page-feature .design2 article.analytics .initial {
+  top: -97px;
+}
+.page-feature .design2 article.analytics .images img {
+  width: 266px;
+  height: 104px;
+}
+.page-feature .design2 article.scalability .initial {
+  top: -97px;
+}
+.page-feature .design2 article.scalability .images {
+  padding-bottom: 200px;
+}
+.page-feature .design2 article.scalability .images img {
+  width: 800px;
+  height: 307px;
+}
+*/
+
+.page-feature .telephone,
+.page-feature-en .telephone {
+  height: 98px;
+  background-color: #111111;
+  padding: 31px 0;
+}
+.page-feature .telephone a,
+.page-feature-en .telephone a {
+  display: block;
+  line-height: 36px;
+  font-size: 16px;
+  margin: 0 auto;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+}
+.page-feature .telephone a span,
+.page-feature-en .telephone a span {
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  vertical-align: bottom;
+  margin-left: 12px;
+  background-image: url(../../img/feature/feature_icon1.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
+/* ===================================================================================================================================================== */
+/*
+/* SPデザイン
+/*
+/* ===================================================================================================================================================== */
+@media screen and (max-width:  900px) {
+  
+  /* ================================================== */
+  /* ページ：TIGの主な機能(.page-feature)
+  /* ================================================== */
+  .page-feature .posts,
+  .page-feature-en .posts {
+    justify-content: center;
+  }
+  .page-feature .posts li,
+  .page-feature-en .posts li {
+    margin: 0 10px;
+    margin-bottom: 20px;
+  }
+  .page-feature .posts .slick-list,
+  .page-feature-en .posts .slick-list {
+    width: auto;
+    padding: 1px 0;
+  }
+  .page-feature .posts .slick-list .slick-track,
+  .page-feature-en .posts .slick-list .slick-track {
+    width: auto;
+    display: block;
+  }
+  .page.page-feature .entry-content,
+  .page.page-feature-en .entry-content {
+    padding: 0;
+  }
+  .page-feature .design3 article .initial,
+  .page-feature-en .design3 article .initial {
+    left: 0;
+    right: 0;
+  }
+  .page-feature .design3 article:nth-child(even) .initial,
+  .page-feature-en .design3 article:nth-child(even) .initial {
+    left: 0;
+    right: 0;
+  }
+  .page-feature .design3 article .description,
+  .page-feature-en .design3 article .description {
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
+  .page-feature .design3 article .content,
+  .page-feature-en .design3 article .content {
+    padding-bottom: 65px;
+  }
+  .page-feature .design3 article .content ul li,
+  .page-feature-en .design3 article .content ul li {
+    padding-bottom: 50px;
+  }
+  .page-feature .design3 article .content ul li .icon,
+  .page-feature-en .design3 article .content ul li .icon {
+    text-align: center;
+  }
+  .page-feature .design3 article .content ul li .title,
+  .page-feature-en .design3 article .content ul li .title {
+    text-align: center;
+  }
+  
+}
+@media screen and (max-width:  900px) and (-webkit-min-device-pixel-ratio: 2) {
+}
+@media screen and (max-width:  900px) and (-webkit-min-device-pixel-ratio: 3) {
+}
+  
+  
+  
+  
+  
+  
