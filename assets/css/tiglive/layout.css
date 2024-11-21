@@ -147,7 +147,9 @@ background: transparent linear-gradient(270deg, #A940C9 0%, #D12F91 100%);
 }
   @media screen and (max-width: 767px) {
     .l-mainvisual {
-      min-height: 75.5rem;
+      min-height: auto;
+      width: 100%;
+      aspect-ratio: 375 / 605;
     }
   }
 
@@ -193,6 +195,13 @@ background: transparent linear-gradient(270deg, #A940C9 0%, #D12F91 100%);
   width: auto;
   height: 35.2vw;
   border-radius: 2vw;
+
+  @media screen and (max-width: 767px) {
+    right: 28.6%;
+    bottom: -1.2%;
+    height: 87.1vw;
+    border-radius: 5vw;
+  }
 }
 
 .l-mainvisual__layer{
@@ -205,9 +214,11 @@ background: transparent linear-gradient(270deg, #A940C9 0%, #D12F91 100%);
 }
   @media screen and (max-width: 767px) {
     .l-mainvisual__layer {
-      padding-top: 75.5rem;
+      padding-top: 76rem;
       background: url("../../img/tiglivev2/mainVisual_layer-sp.png") 50% 60% no-repeat;
       background-size: cover;
+      width: 101%;
+      aspect-ratio: 375 / 605;
     }
   }
 
@@ -226,7 +237,9 @@ background: transparent linear-gradient(270deg, #A940C9 0%, #D12F91 100%);
   }
   @media screen and (max-width: 767px) {
     .l-mainvisual__bg {
-      padding-top: 75.5rem;
+      padding-top: 76rem;
+      width: 101%;
+      aspect-ratio: 375 / 605;
     }
   }
 
@@ -237,6 +250,10 @@ background: transparent linear-gradient(270deg, #A940C9 0%, #D12F91 100%);
   margin: 1.0rem auto;
   width: 100%;
   max-width: 100%;
+
+  @media screen and (max-width: 767px) {
+    margin: 7vw auto;
+  }
 }
 
 .l-logoslide .c-slideItem{

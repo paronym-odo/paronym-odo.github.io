@@ -100,28 +100,69 @@
 
 /* スマホ対応 767px以下 ~ */
 @media screen and (max-width: 767px) {
+  .c-block {
+    width: 94%;
+    padding-top: 3.5vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   .copy_sub {
-    font-size: 4.3vw;
+    font-size: 4.4vw;
+    text-align: center;
+    line-height: 8vw;
   }
   .copy_main_top {
-    font-size: 9.1vw;
+    font-size: 5vw;
     line-height: 11vw;
-    margin-top: 3vw;
+    margin-top: 1vw;
+
+    span {
+      font-size: 5.4vw;
+    }
   }
   .copy_main_middle {
-    font-size: 9.1vw;
-    line-height: 11vw;
+    font-size: 7.7vw;
+    line-height: 6vw;
+    white-space: nowrap;
   }
   .copy_main_bottom {
-    font-size: 9.1vw;
-    line-height: 11vw;
+    font-size: 18vw;
+    line-height: 25vw;
+    letter-spacing: -1.5vw;
+  }
+  .minvisual_button_box {
+    margin-top: 73.5vw;
+    display: flex;
+    gap: 2vw;
+    align-items: center;
+    width: 100%;
   }
   .request_button {
-    width: 100%;
-    height: 13.3333vw;
+    height: 12.7vw;
+    width: 50%;
+    flex: 1;
+    font-size: 4.2vw;
+    border: 0.5vw solid #3AC0C4;
+    letter-spacing: 0;
 
     span {
       font-size: 3.3vw;
+      letter-spacing: 0;
+    }
+  }
+  .inquiry_button {
+    height: 12.7vw;
+    width: 50%;
+    flex: 1;
+    font-size: 4.3vw;
+    font-weight: bold;
+    gap: 1.3vw;
+
+    span {
+      font-size: 2.3vw;
+      line-height: 3.8vw;
+      border-bottom: 0.4vw solid white;
     }
   }
 }
@@ -194,6 +235,7 @@
   flex-direction: column;
   width: 100%;
   position: relative;
+  padding-inline: 22px;
 
   &::before {
     content: "";
@@ -241,20 +283,82 @@
 .bubble_text_margin {
   margin-top: 6px;
 }
+@media screen and (max-width: 767px) {
+  .section_probrem {
+    padding-bottom: 9.6vw;
+  }
+  .probrem_title {
+    font-size: 8.5vw;
+    line-height: 16vw;
+    letter-spacing: 0;
+    padding-top: 8.5vw;
+  }
+  .probrem_title_en {
+    font-size: 3.8vw;
+    line-height: 5vw;
+    letter-spacing: 0;
+  }
+  .probrem_list {
+    margin-top: 7vw;
+    padding-inline: 4.3vw;
+    gap: 3.4vw;
+  }
+  .probrem {
+    width: 100%;
+    height: auto;
+    gap: 6vw;
+  }
+  .people_img {
+    width: 23.3vw;
+    height: 23.3vw;
+    min-width: 23.3vw;
+  }
+  .bubble_text_main {
+    font-size: 4.1vw;
+    line-height: 6vw;
+
+    span {
+      font-size: 4.1vw;
+      line-height: 6vw;
+    }
+  }
+  .bubble_text_sub {
+    font-size: 3.2vw;
+    line-height: 4vw;
+    padding-inline: 8vw;
+  }
+  .bubble_text_margin {
+    margin-top: 3vw;
+  }
+  .bubble {
+    border-radius: 2vw;
+    padding-inline: 0;
+
+    &::before {
+      left: -4vw;
+      border-width: 4vw 7vw 4vw 0;
+    }
+    &.bubble_lg {
+      padding-block: 3.5vw;
+    }
+    &.bubble_sm {
+      padding-block: 3vw;
+    }
+  }
+}
 /* Probrem パート */
 
 /* Functions パート */
 .section_functions {
   background: transparent url('../../img/tiglivev2/needs_bg.png') 0% 0% repeat padding-box;
   background-size: 85px 85px;
-  padding-top: 34px;
   padding-bottom: 80px;
+  padding-top: 34px;
 }
 .success_banner {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 24px;
   color: #24245E;
 }
 .line_left, .line_right {
@@ -313,7 +417,7 @@
     margin-right: 4px;
     margin-top: 4px;
     text-decoration: underline;
-    text-decoration-color: #FFFF9D;
+    text-decoration-color: #FBFF75;
     text-decoration-thickness: 18px;
     text-underline-offset: -4px;
 
@@ -323,12 +427,14 @@
       font-size: 48px;
       letter-spacing: 0;
       line-height: 62.4px;
-      text-decoration: underline;
-      text-decoration-color: #FFFF9D;
-      text-decoration-thickness: 18px;
-      text-underline-offset: -4px;
     }
   }
+  .square_text_box {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+    justify-content: center;
+  } 
   .square_text {
     font-size: 48px;
     font-weight: bold;
@@ -408,6 +514,125 @@
     letter-spacing: 0;
     line-height: 25.6px;
     margin-top: 8px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .section_functions {
+    background: transparent url('../../img/tiglivev2/needs_bg.png') 0% 0% repeat padding-box;
+    background-size: 22.7vw 22.7vw;
+    padding-bottom: 11vw;
+    padding-top: 7.5vw;
+  }
+  .line_left, .line_right {
+    width: 8vw;
+    border-top: 1vw solid #24245E;
+    margin-top: 6vw;
+  }
+  .line_right {
+    transform: rotate(-45deg);
+  }
+  .text_with_dots {
+    text-align: center;
+    padding: 0 0.5vw;
+  
+    .top_dots {
+      line-height: 4.3vw;
+      margin-left: -3vw;
+      letter-spacing: 0;
+
+      span {
+        font-size: 2vw;
+        letter-spacing: 4.9vw;
+        line-height: 4.3vw;
+        transform: scale(0.75);
+        margin-left: -3vw;
+      }
+    }
+    .dots_space {
+      margin-left: 6.3vw;
+    }
+    .section_top_text {
+      font-size: 4.6vw;
+      line-height: 1;
+  
+      span {
+        font-size: 5.8vw;
+        line-height: 1;
+      }
+    }
+  }
+  .success_main_text {
+    flex-wrap: wrap;
+    padding-inline: 4.2vw;
+    justify-content: start;
+    gap: 0;
+    margin-top: 0;
+
+    .marker_text {
+      line-height: 2;
+      font-size: 6vw;
+      text-decoration-thickness: 3.4vw;
+      text-underline-offset: -0.2vw;
+      margin-top: 1vw;
+
+      .marker_text_lg {
+        font-size: 8.8vw;
+        line-height: 16.3vw;
+      }
+    }
+    .square_text_box {
+      gap: 1vw;
+      margin-left: auto;
+    }
+    .square_text {
+      width: 13vw;
+      height: 13vw;
+      font-size: 9vw;
+      line-height: 2;
+    }
+    .square_img {
+      width: 13vw;
+      height: 13vw;
+      padding: 1.4vw;
+    }
+  }
+  .functions_list {
+    margin-top: 6.4vw;
+    padding-inline: 4.2vw;
+    gap: 6vw;
+  }
+  .function {
+    width: 100%;
+
+    .img_wrapper {
+      height: 66.2vw;
+      border-radius: 3vw;
+      border: 0.3vw #ECEBF4 solid;
+      gap: 3vw;
+      padding: 1vw;
+    }
+    .function_title {
+      gap: 1.7vw;
+      margin-top: 3.6vw;
+    }
+    .function_title_no {
+      font-size: 7.3vw;
+      letter-spacing: 0;
+      line-height: 1;
+      white-space: nowrap;
+    }
+    .function_title_text {
+      font-size: 5.3vw;
+      letter-spacing: 0;
+      line-height: 9vw;
+      white-space: nowrap;
+    }
+    .function_description {
+      font-size: 3.73vw;
+      letter-spacing: 0;
+      line-height: 6vw;
+      margin-top: 1vw;
+    }
   }
 }
 /* Functions パート */
@@ -555,6 +780,107 @@
   letter-spacing: 1px;
   line-height: 62.4px;
 }
+@media screen and (max-width: 767px) {
+  .section_analytics {
+    padding-top: 8.5vw;
+    padding-bottom: 11.7vw;
+    padding-inline: 2.8vw;
+  }
+  .analytics_bubble {
+    border: 0.3vw solid #ECEBF4;
+    border-radius: 2vw;
+    box-shadow: 0px 2vw 8vw #ECEBF4;
+    padding: 5.3vw 3vw 5vw;
+    width: 100%;
+
+    &::after {
+      bottom: -6.5vw;
+      border-width: 12vw 26vw 0;
+    }
+
+    .check_img {
+      width: 12.5vw;
+      min-width: 12.5vw;
+    }
+    .bubble_header {
+      gap: 2vw;
+    }
+    .bubble_title_top {
+      font-size: 3.8vw;
+      letter-spacing: 0;
+      line-height: 1;
+    }
+    .bubble_title_bottom {
+      font-size: 5.2vw;
+      letter-spacing: 0;
+      line-height: 1.5;
+      margin-top: 0.4vw;
+
+      span {
+        font-size: 5.2vw;
+        letter-spacing: 0;
+        line-height: 1.5;
+
+      }
+    }
+    .bubble_body {
+      gap: 4vw;
+      margin-top: 4.3vw;
+      flex-direction: column;
+    }
+    .analytics_card {
+      border-radius: 2vw;
+      border: 0.5vw solid #F5F3FB;
+      padding: 3vw 4vw 4.5vw;
+      width: 100%;
+
+      .card_title {
+        gap: 1.8vw;
+      }
+      .card_title_text {
+        font-size: 4.3vw;
+        letter-spacing: 0;
+        line-height: 8.5vw;
+      }
+      .card_title_decoration {
+        width: 4.6vw;
+        height: 1vw;
+        border-radius: 100px;
+      }
+      .card_description {
+        font-size: 3.2vw;
+        letter-spacing: 0;
+        line-height: 5.4vw;
+        margin-top: 0;
+      }
+      .card_img {
+        margin-top: 4vw;
+      }
+    }
+  }
+  .analytics_bottom_catch {
+    flex-direction: column;
+    margin-top: 11.3vw;
+  }
+  .bottom_catch_left {
+    font-size: 6.4vw;
+    letter-spacing: 0;
+    line-height: 1.2;
+    text-align: center;
+    
+    span {
+      font-size: 6.4vw;
+      letter-spacing: 0;
+      line-height: 1.2;
+    }
+  }
+  .bottom_catch_right {
+    font-size: 9.5vw;
+    letter-spacing: 0.1vw;
+    line-height: 7vw;
+    text-align: center;
+  }
+}
 /* Analytics パート */
 
 .middle_button_list {
@@ -587,8 +913,16 @@
   position: relative;
 
   &:hover {
+    color: #3AC0C4;
+    font-size: 20px;
     color: #FF580D;
     border-color: #FF580D;
+  }
+  span {
+    font-weight: bold;
+    letter-spacing: 0.38px;
+    line-height: 60px;
+
   }
   .button_arrow_icon {
     position: absolute;
@@ -632,5 +966,71 @@
     right: 14px;
     width: 24px;
     filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
+  }
+}
+.for_pc {
+  display: flex;
+}
+.for_sp {
+  display: none;
+}
+@media screen and (max-width: 767px) {
+  .for_pc {
+    display: none;
+  }
+  .for_sp {
+    display: flex;
+  }
+  .middle_button_list {
+    padding-top: 8.6vw;
+    padding-bottom: 8.6vw;
+    gap: 3.2vw;
+    flex-direction: column;
+    padding-inline: 4.3vw;
+  }
+  .middle_request_button {
+    font-size: 3.2vw;
+    width: 100%;
+    height: 13.3vw;
+    font-weight: normal;
+    letter-spacing: 0;
+    line-height: 1;
+
+    span {
+      font-size: 4.8vw;
+      letter-spacing: -0.1vw;
+      font-weight: bold;
+      display: inline-flex;
+      margin-right: 1vw;
+    }
+    .button_arrow_icon {
+      top: 27%;
+      right: 3.5vw;
+      width: 6vw;
+    }
+  }
+  .middle_inquiry_button {
+    font-size: 4.8vw;
+    width: 100%;
+    height: 13.3vw;
+    font-weight: bold;
+    letter-spacing: -0.1vw;
+    line-height: 1;
+    flex-direction: row;
+
+    span {
+      font-size: 3.2vw;
+      letter-spacing: 0;
+      text-decoration: underline;
+      text-decoration-color: white;
+      text-decoration-thickness: 0.5vw;
+      text-underline-offset: 1.3vw;
+      margin-right: 2.3vw;
+    }
+    .button_arrow_icon {
+      top: 27%;
+      right: 4vw;
+      width: 6vw;
+    }
   }
 }

@@ -1,7 +1,10 @@
 /* Project
  ========================================== */
-.p-about,.p-feature,.p-download,.p-case,.p-flow,.p-faq,.p-form,.p-downloadForm, .p-thanks{
-  padding-bottom: 16.0rem;
+.p-about,.p-download,.p-case,.p-flow,.p-faq,.p-form,.p-downloadForm, .p-thanks{
+  padding-bottom: 8.0rem;
+}
+.p-feature {
+  padding-bottom: 2.5rem;
 }
 
 @media screen and (max-width: 767px) {
