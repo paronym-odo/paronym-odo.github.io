@@ -26,14 +26,13 @@
   letter-spacing: 0.02vw;
   line-height: 1.7;
 }
-.copy_main_bottom {
-  font-weight: bold;
-  font-size: 6.5vw;
-  letter-spacing: -0.5vw;
-  line-height: 1;
+.lead_logo {
+  height: 6.2vw;
+  margin-top: 1.2vw;
+  width: auto;
 }
 .minvisual_button_box {
-  margin-top: 4vw;
+  margin-top: 3vw;
   display: flex;
   gap: 1.3vw;
   align-items: center;
@@ -58,8 +57,9 @@
   letter-spacing: -0.1vw;
 
   &:hover {
-    color: #FF580D;
-    border-color: #FF580D;
+    opacity: 1;
+    color: white;
+    background-color: #3AC0C4;
   }
 
   span {
@@ -71,10 +71,12 @@
 .inquiry_button {
   font-size: 1.9vw;
   border-radius: 1000px;
-  border: none;
   cursor: pointer;
   text-align: center;
   color: #ffffff;
+  border-width: 0;
+  border-style: solid;
+  border-color: #D12F91;
   background: transparent linear-gradient(270deg, #A940C9 0%, #D12F91 100%) 0% 0% no-repeat padding-box;
   width: 24.7vw;
   height: 6.2vw;
@@ -86,7 +88,14 @@
   letter-spacing: -0.1vw;
 
   &:hover {
-    background-color: #EE2F08;
+    background: white;
+    opacity: 1;
+    color: #D12F91;
+    border-width: 0.2vw;
+
+    span {
+      border-bottom: 0.2vw solid #D12F91;
+    }
   }
 
   span {
@@ -97,15 +106,29 @@
     line-height: 2vw;
   }
 }
+.new_c_block {
+  position: relative;
+  overflow: hidden;
+  width: fit-content;
+}
+.dummy_smartphone {
+  height: 35.2vw;
+  aspect-ratio: 214/457;
+  margin-left: 17vw;
+}
 
 /* スマホ対応 767px以下 ~ */
 @media screen and (max-width: 767px) {
-  .c-block {
+  .new_c_block {
     width: 94%;
     padding-top: 3.5vw;
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 0 auto;
+  }
+  .dummy_smartphone {
+    display: none;
   }
   .copy_sub {
     font-size: 4.4vw;
@@ -126,13 +149,12 @@
     line-height: 6vw;
     white-space: nowrap;
   }
-  .copy_main_bottom {
-    font-size: 18vw;
-    line-height: 25vw;
-    letter-spacing: -1.5vw;
+  .lead_logo {
+    height: 17vw;
+    margin-top: 6.2vw;
   }
   .minvisual_button_box {
-    margin-top: 73.5vw;
+    margin-top: 75vw;
     display: flex;
     gap: 2vw;
     align-items: center;
@@ -209,8 +231,9 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-top: 46px;
   gap: 10px 24px;
+  max-width: 1000px;
+  margin: 46px auto 0;
 }
 .probrem {
   width: 468px;
@@ -460,8 +483,9 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-top: 38px;
   gap: 40px 24px;
+  max-width: 1000px;
+  margin: 38px auto 0;
 }
 .function {
   width: 468px;
@@ -913,16 +937,18 @@
   position: relative;
 
   &:hover {
-    color: #3AC0C4;
-    font-size: 20px;
-    color: #FF580D;
-    border-color: #FF580D;
+    opacity: 1;
+    color: white;
+    background-color: #3AC0C4;
+
+    .button_arrow_icon {
+      filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
+    }
   }
   span {
     font-weight: bold;
     letter-spacing: 0.38px;
     line-height: 60px;
-
   }
   .button_arrow_icon {
     position: absolute;
@@ -935,10 +961,12 @@
 .middle_inquiry_button {
   font-size: 20px;
   border-radius: 1000px;
-  border: none;
   cursor: pointer;
   text-align: center;
   color: #ffffff;
+  border-width: 0;
+  border-style: solid;
+  border-color: #D12F91;
   background: transparent linear-gradient(270deg, #A940C9 0%, #D12F91 100%) 0% 0% no-repeat padding-box;
   width: 388px;
   height: 80px;
@@ -953,7 +981,14 @@
   position: relative;
 
   &:hover {
-    background-color: #EE2F08;
+    background: white;
+    opacity: 1;
+    color: #D12F91;
+    border-width: 2px;
+
+    .button_arrow_icon {
+      filter: invert(25%) sepia(97%) saturate(2176%) hue-rotate(305deg) brightness(87%) contrast(87%);
+    }
   }
   span {
     font-size: 12px;
@@ -1032,5 +1067,18 @@
       right: 4vw;
       width: 6vw;
     }
+  }
+}
+.flow_background {
+  background-color: #F5F3FB;
+}
+
+/* 既存ページのCSSの序列を無視してフォントサイズ指定を入れる */
+@media screen and (max-width: 767px) {
+  .sp_title {
+    font-size: 4.3vw !important;
+  }
+  .sp_body {
+    font-size: 3.2vw !important;
   }
 }

@@ -159,6 +159,8 @@ background: transparent linear-gradient(270deg, #A940C9 0%, #D12F91 100%);
   width: 100%;
   height: 100%;
   padding-top: 12.5rem;
+  display: flex;
+  justify-content: center;
 }
 
 
