@@ -1083,3 +1083,91 @@
     font-size: 3.2vw !important;
   }
 }
+.c-heading {
+  padding-top: 5.0rem;
+}
+.l-mainvisual{
+  min-height: 46.6vw;
+}
+@media screen and (max-width: 767px) {
+  .l-mainvisual {
+      min-height: auto;
+      width: 100%;
+      aspect-ratio: 375 / 605;
+      min-height: 75.5rem;
+  }
+}
+.l-mainvisual__catch{
+  padding-top: 12.5rem;
+  display: flex;
+  justify-content: center;
+}
+.l-mainvisual__movie{
+  position: absolute;
+  z-index: 11;
+  right: 16.1%;
+  bottom: 4.5%;
+  display: block;
+  width: auto;
+  height: 35.2vw;
+  border-radius: 2vw;
+
+  @media screen and (max-width: 767px) {
+    right: 28.6%;
+    bottom: -1.2%;
+    height: 87.1vw;
+    border-radius: 5vw;
+  }
+}
+.l-mainvisual__layer{
+  position: absolute;
+  z-index: 10;
+  width: 100%;
+  padding-top: 46.6vw;
+  background: url("../../img/tiglivev2/mainVisual_layer.png") center no-repeat;
+  background-size: cover;
+}
+@media screen and (max-width: 767px) {
+  .l-mainvisual__layer {
+    padding-top: 76rem;
+    background: url("../../img/tiglivev2/mainVisual_layer-sp.png") 50% 60% no-repeat;
+    background-size: cover;
+    width: 101%;
+    aspect-ratio: 375 / 605;
+  }
+}
+.l-mainvisual__bg{
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  padding-top: 46.6vw;
+  background: url("../../img/tiglive/mainvisual_bg.jpg") left center repeat-x;
+  background-size: cover;
+  animation: bg_slide 90s linear infinite;
+}
+@keyframes bg_slide {
+    0% { background-position: 0 0;}
+  100% { background-position: -1914px 0;}
+}
+@media screen and (max-width: 767px) {
+  .l-mainvisual__bg {
+    padding-top: 76rem;
+    width: 101%;
+    aspect-ratio: 375 / 605;
+  }
+}
+.l-logoslide{
+  margin: 1.0rem auto;
+  width: 100%;
+  max-width: 100%;
+
+  @media screen and (max-width: 767px) {
+    margin: 7vw auto;
+  }
+}
+.p-about,.p-download,.p-case,.p-flow,.p-faq,.p-form,.p-downloadForm, .p-thanks{
+  padding-bottom: 8.0rem;
+}
+.p-feature {
+  padding-bottom: 2.5rem;
+}

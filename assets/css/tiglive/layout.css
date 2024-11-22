@@ -143,13 +143,11 @@ background: transparent linear-gradient(270deg, #A940C9 0%, #D12F91 100%);
  ========================================== */
 .l-mainvisual{
   position: relative;
-  min-height: 46.6vw;
+  min-height: 71.6rem;
 }
   @media screen and (max-width: 767px) {
     .l-mainvisual {
-      min-height: auto;
-      width: 100%;
-      aspect-ratio: 375 / 605;
+      min-height: 75.5rem;
     }
   }
 
@@ -158,11 +156,31 @@ background: transparent linear-gradient(270deg, #A940C9 0%, #D12F91 100%);
   z-index: 80;
   width: 100%;
   height: 100%;
-  padding-top: 12.5rem;
-  display: flex;
-  justify-content: center;
+  padding-top: 16.0rem;
 }
 
+.l-mainvisual__catch h1::before{
+  display: block;
+  position: absolute;
+  color: #C3358B;
+  top: -2.2rem;
+  font-family: "itc-avant-garde-gothic-pro", sans-serif;
+  content: '“';
+  font-size: 7.2rem;
+}
+
+.l-mainvisual__catch h1 > span{
+  display: block;
+  line-height: 1.4;
+  letter-spacing: 0.052em;
+  font-weight: 700;
+}
+.l-mainvisual__catch h1 > span:nth-of-type(1){
+  font-size: 4.8rem;
+}
+.l-mainvisual__catch h1 > span:nth-of-type(2){
+  font-size: 6.8rem;
+}
 
 .l-mv__catch__text{
   margin-top: 3.2rem;
@@ -174,6 +192,16 @@ background: transparent linear-gradient(270deg, #A940C9 0%, #D12F91 100%);
     width: 100%;
     height: auto;
     padding: 8.4rem 0 0;
+  }
+  .l-mainvisual__catch h1::before{
+  top: -2.2vw;
+  font-size: 5.2rem;
+  }
+  .l-mainvisual__catch h1 > span:nth-of-type(1){
+    font-size: 2.8rem;
+  }
+  .l-mainvisual__catch h1 > span:nth-of-type(2){
+    font-size: 5.2rem;
   }
   .l-mv__catch__text{
     margin-top: 1.6rem;
@@ -188,39 +216,19 @@ background: transparent linear-gradient(270deg, #A940C9 0%, #D12F91 100%);
   }
 }
 
-.l-mainvisual__movie{
-  position: absolute;
-  z-index: 11;
-  right: 16.1%;
-  bottom: 4.5%;
-  display: block;
-  width: auto;
-  height: 35.2vw;
-  border-radius: 2vw;
-
-  @media screen and (max-width: 767px) {
-    right: 28.6%;
-    bottom: -1.2%;
-    height: 87.1vw;
-    border-radius: 5vw;
-  }
-}
-
 .l-mainvisual__layer{
   position: absolute;
   z-index: 10;
   width: 100%;
-  padding-top: 46.6vw;
-  background: url("../../img/tiglivev2/mainVisual_layer.png") center no-repeat;
+  padding-top: 71.6rem;
+  background: url("../../img/tiglive/mainVisual_layer.png") center no-repeat;
   background-size: cover;
 }
   @media screen and (max-width: 767px) {
     .l-mainvisual__layer {
-      padding-top: 76rem;
-      background: url("../../img/tiglivev2/mainVisual_layer-sp.png") 50% 60% no-repeat;
+      padding-top: 75.5rem;
+      background: url("../../img/tiglive/mainVisual_layer-sp.png") 50% 60% no-repeat;
       background-size: cover;
-      width: 101%;
-      aspect-ratio: 375 / 605;
     }
   }
 
@@ -228,7 +236,7 @@ background: transparent linear-gradient(270deg, #A940C9 0%, #D12F91 100%);
   position: absolute;
   z-index: 1;
   width: 100%;
-  padding-top: 46.6vw;
+  padding-top: 71.6rem;
   background: url("../../img/tiglive/mainvisual_bg.jpg") left center repeat-x;
   background-size: cover;
   animation: bg_slide 90s linear infinite;
@@ -239,9 +247,7 @@ background: transparent linear-gradient(270deg, #A940C9 0%, #D12F91 100%);
   }
   @media screen and (max-width: 767px) {
     .l-mainvisual__bg {
-      padding-top: 76rem;
-      width: 101%;
-      aspect-ratio: 375 / 605;
+      padding-top: 75.5rem;
     }
   }
 
@@ -249,13 +255,9 @@ background: transparent linear-gradient(270deg, #A940C9 0%, #D12F91 100%);
 /* Layout/logoslide
  ========================================== */
 .l-logoslide{
-  margin: 1.0rem auto;
+  margin: 2.0rem auto;
   width: 100%;
   max-width: 100%;
-
-  @media screen and (max-width: 767px) {
-    margin: 7vw auto;
-  }
 }
 
 .l-logoslide .c-slideItem{

@@ -12,7 +12,7 @@
   color: #D63737;
 }
 .c-text.-italic {
-  color: #F7542E;
+  color: #0280E8;
 }
 .c-text.-align_left {
   text-align: left;
@@ -123,7 +123,7 @@
   position: relative;
   margin-left: 3.2rem;
   font-family: "itc-avant-garde-gothic-pro", sans-serif;
-  color: #F7542E;
+  color: #0280E8;
 }
 @media screen and (max-width: 767px) {
   .c-heading .ttl_primary {
@@ -152,7 +152,7 @@
 .c-heading .ttl_secondary {
   display: block;
   margin-left: 3.8rem;
-  color: #F7542E;
+  color: #0280E8;
   font-size: 1.8rem;
   line-height: 1;
 }
@@ -170,7 +170,7 @@
   display: inline-block;
   margin: 3.35em auto 0;
   padding: 2.0rem 5.2rem 2.0rem 2.0em;
-  background: #F7542E;
+  background: #0280E8;
   border-radius: 32px;
   cursor: pointer;
   color: #fff;
@@ -192,11 +192,11 @@
 }
 
 .c-btn.-border {
-  color: #F7542E;
+  color: #0280E8;
   padding: 2rem 2rem 2rem 5.2rem ;
   border-width: 1px;
   border-style: solid;
-  border-color: #F7542E;
+  border-color: #0280E8;
   background: #FFFFFF;
 }
 
@@ -242,8 +242,8 @@
   border-width: 2px;
   border-style: solid;
   border-color: transparent;
-  border-bottom-color: #F7542E;
-  border-left-color: #F7542E;
+  border-bottom-color: #0280E8;
+  border-left-color: #0280E8;
   transform: rotate(135deg);
 }
 
@@ -256,7 +256,7 @@
   margin-left: 20px;
   font-size: 1.6rem;
   font-weight: 500;
-  color: #F7542E;
+  color: #0280E8;
 }
 
 .c-form input[type=text], .c-form input[type=email] {
@@ -308,7 +308,7 @@
   color: #fff;
   font-size: 1em;
   text-decoration: none;
-  background: #F7542E;
+  background: #0280E8;
   cursor: pointer;
 }
 .c-form button:hover, .c-form button:focus {
@@ -375,7 +375,7 @@
 }
 
 .c-form__radioInput:checked + label {
-  color: #F7542E;
+  color: #0280E8;
 }
 
 .c-form__radioInput:checked + label::after {
@@ -386,14 +386,14 @@
   left: 3px;
   width: 14px;
   height: 14px;
-  background: #F7542E;
+  background: #0280E8;
   border-radius: 50%;
 }
 .c-form__checkboxInput {
   display: none;
 }
 .c-form__checkboxInput:checked + .mwform-checkbox-field-text {
-  color: #F7542E;
+  color: #0280E8;
 }
 .c-form__checkboxInput:checked + .mwform-checkbox-field-text::after {
   content: "";
@@ -404,8 +404,8 @@
   width: 1.1rem;
   height: 1.6rem;
   transform: rotate(40deg);
-  border-bottom: 3px solid #F7542E;
-  border-right: 3px solid #F7542E;
+  border-bottom: 3px solid #0280E8;
+  border-right: 3px solid #0280E8;
 }
 .mwform-checkbox-field-text {
   display: inline-block;
@@ -427,16 +427,16 @@
 
 
 .c-form__radioInput:checked+.mwform-radio-field-text:after {
-  content: "" !important;
-  display: block !important;
-  position: absolute !important;
-  top: .8rem !important;
-  left: .6rem !important;
-  width: 1.1rem !important;
-  height: 1.6rem !important;
-  transform: rotate(40deg) !important;
-  border-bottom: 3px solid #f7542e !important;
-  border-right: 3px solid #f7542e !important;
+  content: "";
+  display: block;
+  position: absolute;
+  top: .8rem;
+  left: .6rem;
+  width: 1.1rem;
+  height: 1.6rem;
+  transform: rotate(40deg);
+  border-bottom: 3px solid #0280E8;
+  border-right: 3px solid #0280E8
 }
 .mwform-radio-field-text {
   display: inline-block;
